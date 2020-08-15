@@ -1,3 +1,12 @@
+# a fork of Ringlys iOS Ringly app
+
+todo: get this repo buildable in 2020.
+- download xcode 10.1 as its needed to migrate swift 3.x source code, which some of this is written in.
+
+
+=================================
+
+
 # Ringly for iOS
 
 ## Development
