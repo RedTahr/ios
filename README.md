@@ -5,9 +5,11 @@ todo: get this repo buildable in August 2020, using XCode 11.6, under macOS 10.1
 
 ### initial hurdle, on running ./Tools/bootstrap:
 - "Parse error: expected submodule commit SHA in output of task (ls-tree -z HEAD IOS-DFU-Library) but encountered:" 
+
 based on https://github.com/Carthage/Carthage/issues/135 have 
 run "carthage bootstrap --no-use-binaries --platform ios" from 
 a clean folder containing only the Cartfile from this repo.
+
 That currently hits a snag with Audioplayer failing to build, due to the above Swift 3.x issue.
 
 
