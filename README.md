@@ -12,6 +12,16 @@ a clean folder containing only the Cartfile from this repo.
 
 That currently hits a snag with Audioplayer failing to build, due to the above Swift 3.x issue.
 
+### XCode 10.1
+
+opened Ringly fine, suggested things, applied suggestions without issue, couldn't migrate as can't build the app yet.
+
+### next hurdle - Swift 2.0 / XCode 8.3
+
+DFU library is written in Swift 2.0, which wants XCode 8.x to migrate...which doesn't run under Catalina.
+Mind need to try a VM hackintosh, or get hold of an older mac, or see what happens by saying the DFU library is Swift 3.0 and then manually
+trying to fix the 200+ "this has been deprecated in Swift 3.0" warnings that show up.
+
 
 
 
