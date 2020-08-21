@@ -40,7 +40,6 @@
 		436E28131CB84D8C00D4663C /* NSErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E28121CB84D8C00D4663C /* NSErrorTests.swift */; };
 		436E282E1CB84EB700D4663C /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 436E281B1CB84E9400D4663C /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		439020391E42E10100C01282 /* ResponseProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439020381E42E10100C01282 /* ResponseProcessing.swift */; };
-		439020401E42E6DA00C01282 /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4390203E1E42E6DA00C01282 /* DFULibrary.framework */; };
 		439020411E42E6DA00C01282 /* RinglyExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4390203F1E42E6DA00C01282 /* RinglyExtensions.framework */; };
 		439C09391E42C200005C8D43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C09381E42C200005C8D43 /* Request.swift */; };
 		43AC36961E0AE32C00AB0049 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43AC36941E0AE31000AB0049 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -131,7 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439020401E42E6DA00C01282 /* DFULibrary.framework in Frameworks */,
 				439020411E42E6DA00C01282 /* RinglyExtensions.framework in Frameworks */,
 				43AC36971E0AE38300AB0049 /* libz.tbd in Frameworks */,
 			);
