@@ -54,9 +54,9 @@
 
 #pragma mark - Parsing Data
 +(void)parseActivityTrackingCharacteristicData:(NSData *)data
-                            withUpdateCallback:(nonnull void (^)(RLYActivityTrackingUpdate * _Nonnull))updateCallback
-                                 errorCallback:(nonnull void (^)(NSError * _Nonnull))errorCallback
-                            completionCallback:(nonnull void (^)())completionCallback
+                            withUpdateCallback:(nonnull void(NS_NOESCAPE^)(RLYActivityTrackingUpdate*_Nonnull))updateCallback
+                                 errorCallback:(nonnull void(NS_NOESCAPE^)(NSError * _Nonnull))errorCallback
+                            completionCallback:(nonnull void(NS_NOESCAPE^)())completionCallback
 {
     // if the data is empty, this indicates the termination of data updates
     if (data.length == 0)
