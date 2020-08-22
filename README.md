@@ -10,18 +10,21 @@ based on https://github.com/Carthage/Carthage/issues/135 have
 run "carthage bootstrap --no-use-binaries --platform ios" from 
 a clean folder containing only the Cartfile from this repo.
 
-That currently hits a snag with Audioplayer failing to build, due to the above Swift 3.x issue.
+That currently hits a snag with Audioplayer failing to build, due to the above Swift 3.x issue, getting XCode 10.1 resolves that.
+There are a few other Carthage build failures, running "carthage update --platform iOS" in an empty folder with a cartfile containing
+one entry at a time has got most things downloaded and built.
 
 ### XCode 10.1
 
-opened Ringly fine, suggested things, applied suggestions without issue, couldn't migrate as can't build the app yet.
+opened Ringly fine, suggested things, applied suggestions without issue, offers to migrate to Swift 4.x when the project can be built.
 
-### next hurdle - Swift 2.0 / XCode 8.3
+
+### DFU issue - Swift 2.0 / XCode 8.3
 
 DFU library is written in Swift 2.0, which wants XCode 8.x to migrate...which doesn't run under Catalina.
-Mind need to try a VM hackintosh, or get hold of an older mac, or see what happens by saying the DFU library is Swift 3.0 and then manually
+Might need to try a VM hackintosh, or get hold of an older mac, or see what happens by saying the DFU library is Swift 3.0 and then manually
 trying to fix the 200+ "this has been deprecated in Swift 3.0" warnings that show up.
-
+But as this for firmware updates its simpler to chop it and the Ringly DFU project/references out, then try migrating.
 
 
 
