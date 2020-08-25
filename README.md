@@ -12,7 +12,7 @@ a clean folder containing only the Cartfile from this repo.
 
 That currently hits a snag with Audioplayer failing to build, due to the above Swift 3.x issue, getting XCode 10.1 resolves that.
 There are a few other Carthage build failures, running "carthage update --platform iOS" in an empty folder with a cartfile containing
-one entry at a time has got most things downloaded and built.
+one entry at a time has got most things downloaded and built, with the exception of ReactiveCocoa
 
 ### XCode 10.1
 
@@ -26,9 +26,17 @@ Might need to try a VM hackintosh, or get hold of an older mac, or see what happ
 trying to fix the 200+ "this has been deprecated in Swift 3.0" warnings that show up.
 But as this for firmware updates its simpler to chop it and the Ringly DFU project/references out, then try migrating.
 
+### ReactiveCocoa
+
+Carthage can't get this to build, have opened it in XCode and updated a few things as suggested by the compiler, but haven't got it going yet. So Ringly continues
+to not built as ReactiveCocoa is missing :-)
+
+Most work is being carried out in the removed-dfu branch at time of writing.
 
 
+original readme below
 ================================================
+
 
 # Ringly for iOS
 
