@@ -57,7 +57,7 @@ public final class ActivityCache
 
     public func stepsProducer() -> SignalProducer<[(Date,Steps)], NSError>
     {
-        let results = configuration.realmResultsProducer { realm -> Results<ActivityCacheRecord> in
+        _ = configuration.realmResultsProducer { realm -> Results<ActivityCacheRecord> in
             realm.objects(ActivityCacheRecord.self)
         }
         

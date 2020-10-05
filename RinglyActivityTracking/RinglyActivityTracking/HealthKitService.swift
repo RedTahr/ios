@@ -231,7 +231,7 @@ extension HealthKitService: MindfulMinuteDataSource
             [NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: true)]
         )
         
-        let totalTime = TimeInterval(0)
+        _ = TimeInterval(0)
         
         let minutesQuery = query.map({ ($0 as? [HKCategorySample]) ?? [] }).map({ samples in
             samples.reduce(TimeInterval(0), { current, sample in

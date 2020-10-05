@@ -54,12 +54,12 @@ public final class RealmService
                 {
                     migration.enumerateObjects(ofType: "UpdateModel", { old, new in
                         guard let timestamp = old?["timestamp"] as? Int32 else {
-                            logFunction?("Could not find “timestamp” of \(old) in migration")
+                            logFunction?("Could not find “timestamp” of \(String(describing: old)) in migration")
                             return
                         }
 
                         guard let sourceHash = old?["sourceHash"] as? Int16 else {
-                            logFunction?("Could not find “sourceHash” of \(old) in migration")
+                            logFunction?("Could not find “sourceHash” of \(String(describing: old)) in migration")
                             return
                         }
 
@@ -345,7 +345,7 @@ extension RealmService
                     
                     let predicate = NSPredicate(format: "id == %@", session.id)
                     try realm.write {
-                        realm.delete(realm.objects(UpdateMindfulnessSession).filter(predicate))
+                        realm.delete(realm.objects(UpdateMindfulnessSession.self).filter(predicate))
                     }
                 })
             }
@@ -450,7 +450,7 @@ extension RealmService: StepsDataSource
             let startMinute = try RLYActivityTrackingDate(date: startDate).minute
             let endMinute = try RLYActivityTrackingDate(date: endDate).minute
             predicate = NSPredicate(format: "timestamp >= %d AND timestamp <= %d", startMinute, endMinute)
-        } catch let error as NSError {
+        } catch _ as NSError {
             return SignalProducer(value: Date?.none)
         }
 
@@ -499,7 +499,7 @@ extension RealmService: MindfulMinuteDataSource
             let startMinute = try RLYActivityTrackingDate(date: startDate).minute
             let endMinute = try RLYActivityTrackingDate(date: endDate).minute
             predicate = NSPredicate(format: "startTimestamp >= %d AND startTimestamp <= %d", startMinute, endMinute)
-        } catch let error as NSError {
+        } catch _ as NSError {
             return SignalProducer.empty
         }
         

@@ -18,7 +18,7 @@ extension Calendar
 extension Calendar
 {
     // MARK: - Component Timers
-    fileprivate func timer(matching components: DateComponents, on scheduler: DateSchedulerProtocol)
+    fileprivate func timer(matching components: DateComponents, on scheduler: DateScheduler)
         -> SignalProducer<Date, NoError>
     {
         return SignalProducer { observer, disposable in
@@ -48,7 +48,7 @@ extension Calendar
     // MARK: - Daily Timers
 
     /// A timer that emits the current date whenever the day changes.
-    public func dailyTimer(on scheduler: DateSchedulerProtocol) -> SignalProducer<Date, NoError>
+    public func dailyTimer(on scheduler: DateScheduler) -> SignalProducer<Date, NoError>
     {
         var components = DateComponents()
         components.hour = 0
@@ -59,7 +59,7 @@ extension Calendar
     }
 
     /// A timer that immediately emits the current date, then follows the behavior of `dailyTimer(on:)`.
-    public func immediateDailyTimer(on scheduler: DateSchedulerProtocol) -> SignalProducer<Date, NoError>
+    public func immediateDailyTimer(on scheduler: DateScheduler) -> SignalProducer<Date, NoError>
     {
         return SignalProducer.concat([
             SignalProducer.deferValue({ scheduler.currentDate }),

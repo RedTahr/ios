@@ -14,7 +14,7 @@ public extension Reactive where Base: NSObject
      */
     public func producerFor<T>(keyPath: String) -> SignalProducer<T?, NoError>
     {
-        return values(forKeyPath: keyPath).map({ any in
+        return producer(forKeyPath: keyPath).map({ any in
             any.flatMap({ some in some as? T })
         })
     }

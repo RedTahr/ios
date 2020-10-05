@@ -64,7 +64,7 @@ extension BoundaryDates
     /// - parameter updating:  The frequency with which the progress should update.
     /// - parameter scheduler: The scheduler to use.
     
-    public func progressProducer(updating: DispatchTimeInterval, on scheduler: DateSchedulerProtocol)
+    public func progressProducer(updating: DispatchTimeInterval, on scheduler: DateScheduler)
         -> SignalProducer<Double, NoError>
     {
         return SignalProducer.`defer` {
