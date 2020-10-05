@@ -1,7 +1,6 @@
 import ReactiveSwift
 import Result
 import RinglyAPI
-import RinglyDFU
 import RinglyKit
 
 extension UIViewController

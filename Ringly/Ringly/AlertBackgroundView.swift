@@ -1,6 +1,5 @@
 import PureLayout
 import RinglyAPI
-import RinglyDFU
 import UIKit
 
 final class AlertBackgroundView: UIView

@@ -2,7 +2,6 @@ import Foundation
 import Mixpanel
 import ReactiveSwift
 import RinglyAPI
-import RinglyDFU
 import enum Result.NoError
 
 // MARK: - Analytics Service

@@ -1,7 +1,6 @@
 import ReactiveSwift
 import Result
 import RinglyAPI
-import RinglyDFU
 import RinglyExtensions
 
 /// Looks up firmware updates from the Ringly API.

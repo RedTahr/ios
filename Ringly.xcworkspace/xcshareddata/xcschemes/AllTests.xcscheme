@@ -168,16 +168,6 @@
                ReferencedContainer = "container:IOS-DFU-Library/DFULibrary.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "435B1A1B1DCA942000AEDF09"
-               BuildableName = "RinglyDFUTests.xctest"
-               BlueprintName = "RinglyDFUTests"
-               ReferencedContainer = "container:RinglyDFU/RinglyDFU.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

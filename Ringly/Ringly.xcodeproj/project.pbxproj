@@ -15,7 +15,6 @@
 		430210611D3FBA0400C18699 /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430210601D3FBA0400C18699 /* ConfigurationsViewController.swift */; };
 		4305D2611C3DDB05007E063C /* URLAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D2601C3DDB05007E063C /* URLAction.swift */; };
 		4305D2631C3EB9C9007E063C /* URLActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D2621C3EB9C9007E063C /* URLActionTests.swift */; };
-		4305D2651C3EC8C1007E063C /* DFUURLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D2641C3EC8C1007E063C /* DFUURLViewController.swift */; };
 		43084DB31D3063CE00C613C1 /* PreferencesActivityPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43084DB21D3063CE00C613C1 /* PreferencesActivityPickerView.swift */; };
 		43084DB51D30791700C613C1 /* PreferencesActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43084DB41D30791700C613C1 /* PreferencesActivityViewController.swift */; };
 		4308DE541D30251C00847DA6 /* PreferencesSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4308DE531D30251C00847DA6 /* PreferencesSwitchView.swift */; };
@@ -28,12 +27,6 @@
 		430F2CD11BA8B16400073E5A /* RinglyExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 430F2CCF1BA8B16400073E5A /* RinglyExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		430F2D241BA8BF1000073E5A /* UIView+Ringly.m in Sources */ = {isa = PBXBuildFile; fileRef = 430F2D231BA8BF1000073E5A /* UIView+Ringly.m */; };
 		431093EB1C7CC7A9005011B5 /* UnderlineDetailControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431093EA1C7CC7A9005011B5 /* UnderlineDetailControl.swift */; };
-		4311132C1DF74C2C005C6719 /* DFUUnderlineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311132B1DF74C2C005C6719 /* DFUUnderlineLabel.swift */; };
-		4311132F1DF759BA005C6719 /* DFUFakePhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311132E1DF759BA005C6719 /* DFUFakePhoneView.m */; };
-		431113321DF75AE7005C6719 /* DFUToggleBluetoothFakePhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 431113311DF75AE7005C6719 /* DFUToggleBluetoothFakePhoneView.m */; };
-		431113351DF75B38005C6719 /* DFUToggleArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 431113341DF75B38005C6719 /* DFUToggleArrow.m */; };
-		431113381DF75E69005C6719 /* DFULightningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 431113371DF75E69005C6719 /* DFULightningView.m */; };
-		4311133A1DF76948005C6719 /* RingProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431113391DF76948005C6719 /* RingProgressIndicator.swift */; };
 		4311BD961C52BB730092D5AD /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BD951C52BB730092D5AD /* AuthenticationViewController.swift */; };
 		4311BD9C1C52CAD30092D5AD /* VideoBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BD9B1C52CAD30092D5AD /* VideoBackgroundViewController.swift */; };
 		4311BD9E1C52CBFE0092D5AD /* AuthenticationButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311BD9D1C52CBFE0092D5AD /* AuthenticationButtonsViewController.swift */; };
@@ -76,7 +69,6 @@
 		43316C831BC4413C00DB30F6 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43316C821BC4413C00DB30F6 /* AnalyticsService.swift */; };
 		43316C881BC5BC4400DB30F6 /* PeripheralRegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43316C871BC5BC4400DB30F6 /* PeripheralRegistrationService.swift */; };
 		43316C8C1BC6B65900DB30F6 /* UpdatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43316C8B1BC6B65900DB30F6 /* UpdatesService.swift */; };
-		43316C901BC6DF9600DB30F6 /* DFUPackageBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43316C8F1BC6DF9600DB30F6 /* DFUPackageBuilderViewController.swift */; };
 		4331DEB91CE3A9DC00A5ABAD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4331DEB71CE3A9DC00A5ABAD /* Realm.framework */; };
 		4331DEBA1CE3A9DC00A5ABAD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4331DEB81CE3A9DC00A5ABAD /* RealmSwift.framework */; };
 		433363901D1D7F60001E31C0 /* RLYPeripheral+ANCSV2Matching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333638F1D1D7F60001E31C0 /* RLYPeripheral+ANCSV2Matching.swift */; };
@@ -181,7 +173,6 @@
 		436ADEAF1D99B34800AE8405 /* PreferencesContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADEAE1D99B34800AE8405 /* PreferencesContentViewController.swift */; };
 		436ADEB11D99BF1C00AE8405 /* PreferencesBodyDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436ADEB01D99BF1C00AE8405 /* PreferencesBodyDataViewController.swift */; };
 		436CA0021D08CCE300CD7E51 /* DayToWeekTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CA0011D08CCE300CD7E51 /* DayToWeekTransitionController.swift */; };
-		436E27E91CB8040900D4663C /* DFUStartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E27E81CB8040900D4663C /* DFUStartingViewController.swift */; };
 		436E27F11CB8474F00D4663C /* NotifiedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E27F01CB8474F00D4663C /* NotifiedEvent.swift */; };
 		436E27F31CB84B7D00D4663C /* InitializableMutablePropertyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E27F21CB84B7D00D4663C /* InitializableMutablePropertyProtocol.swift */; };
 		436F1D8D1C46E1C100012122 /* ButtonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436F1D8C1C46E1C100012122 /* ButtonControl.swift */; };
@@ -195,10 +186,6 @@
 		4375789F1CBE935000243662 /* NSUUID+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375789E1CBE935000243662 /* NSUUID+Coding.swift */; };
 		437578A11CBE961F00243662 /* NSUUID+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437578A01CBE961F00243662 /* NSUUID+CodingTests.swift */; };
 		437789311D1ABB3700A234A2 /* GraphGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437789301D1ABB3700A234A2 /* GraphGoalView.swift */; };
-		437789331D1AEEDA00A234A2 /* DFUToggleBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437789321D1AEEDA00A234A2 /* DFUToggleBluetoothViewController.swift */; };
-		437789351D1AEF0000A234A2 /* DFUCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437789341D1AEF0000A234A2 /* DFUCompleteViewController.swift */; };
-		437877931BB5D86F00878DD3 /* RinglyDFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437877921BB5D86F00878DD3 /* RinglyDFU.framework */; };
-		437877941BB5D86F00878DD3 /* RinglyDFU.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 437877921BB5D86F00878DD3 /* RinglyDFU.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4378B4261B547CCC00B175DE /* ResettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4378B4251B547CCC00B175DE /* ResettingViewController.m */; };
 		437C64BD1CA44A0400B556B4 /* PeripheralReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C64BC1CA44A0400B556B4 /* PeripheralReference.swift */; };
 		437C64BF1CA44A4100B556B4 /* RLYPeripheral+VerifyPaired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C64BE1CA44A4100B556B4 /* RLYPeripheral+VerifyPaired.swift */; };
@@ -267,7 +254,6 @@
 		43A56FD21C6BF3D800F69963 /* ForegroundBackgroundTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A56FD11C6BF3D800F69963 /* ForegroundBackgroundTransition.swift */; };
 		43A5AC9B1C810930009AFD53 /* CrossDissolveTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A5AC9A1C810930009AFD53 /* CrossDissolveTransitionController.swift */; };
 		43A7863E1C8DE8C90097FEA9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7863D1C8DE8C90097FEA9 /* GradientView.swift */; };
-		43A7913E1B16111500361553 /* DFUProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7913D1B16111500361553 /* DFUProgressView.m */; };
 		43A803561DC0F8B30001C696 /* ApplicationsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A803551DC0F8B30001C696 /* ApplicationsServiceTests.swift */; };
 		43A8035A1DC13E760001C696 /* PeripheralActivityUnsupportedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A803591DC13E760001C696 /* PeripheralActivityUnsupportedViewController.swift */; };
 		43AA9D961E4D051C00ABEED5 /* CameraButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA9D951E4D051C00ABEED5 /* CameraButtonsView.swift */; };
@@ -318,12 +304,6 @@
 		43D78E161C74D39F00C29ECF /* RuleVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D78E151C74D39F00C29ECF /* RuleVerificationView.swift */; };
 		43DB78A91DB51D5300FFAFA4 /* UrbanAirshipDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB78A81DB51D5300FFAFA4 /* UrbanAirshipDelegate.swift */; };
 		43DD20D71E524AC900789CA0 /* PhotoTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD20D61E524AC900789CA0 /* PhotoTitleView.swift */; };
-		43DDDA0F1CB70C2600A9C108 /* DFUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDDA0E1CB70C2600A9C108 /* DFUViewController.swift */; };
-		43DDDA141CB7E74D00A9C108 /* DFUActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDDA131CB7E74D00A9C108 /* DFUActivityViewController.swift */; };
-		43DDDA161CB7EB5200A9C108 /* DFUProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDDA151CB7EB5200A9C108 /* DFUProgressViewController.swift */; };
-		43DDDA181CB7F41200A9C108 /* DFUOpenSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDDA171CB7F41200A9C108 /* DFUOpenSettingsViewController.swift */; };
-		43DDDA201CB7FA2F00A9C108 /* DFUChargePeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDDA1F1CB7FA2F00A9C108 /* DFUChargePeripheralViewController.swift */; };
-		43DDDA221CB7FC1C00A9C108 /* DFUChargePhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDDA211CB7FC1C00A9C108 /* DFUChargePhoneViewController.swift */; };
 		43DFF5351DEF358A0009257F /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFF5341DEF358A0009257F /* ColorSliderView.swift */; };
 		43DFF5371DEF3DA00009257F /* ColorSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFF5361DEF3DA00009257F /* ColorSliderCell.swift */; };
 		43DFF5391DEF42FE0009257F /* CheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFF5381DEF42FE0009257F /* CheckboxCell.swift */; };
@@ -344,7 +324,6 @@
 		43E498011DEDF8E400434CD5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E498001DEDF8E400434CD5 /* Nimble.framework */; };
 		43E498021DEDF8EE00434CD5 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43E498001DEDF8E400434CD5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43E972341DC2ACEB00ABE087 /* RLYPeripheral+ANCSV1NoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E972331DC2ACEB00ABE087 /* RLYPeripheral+ANCSV1NoAction.swift */; };
-		43ECA1691B59AD5400C0F8B2 /* DFUOpenSettingsSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ECA1681B59AD5400C0F8B2 /* DFUOpenSettingsSubview.m */; };
 		43F21CDF1CE66EE30066CE40 /* SavedPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F21CDE1CE66EE30066CE40 /* SavedPeripheral.swift */; };
 		43F21CE41CEA58CE0066CE40 /* DeveloperTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F21CE31CEA58CE0066CE40 /* DeveloperTabBarViewController.swift */; };
 		43F21CE71CEA5CCB0066CE40 /* ActivityIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F21CE61CEA5CCB0066CE40 /* ActivityIntroViewController.swift */; };
@@ -416,7 +395,6 @@
 		50E75E781E311CE00094E42E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E75E771E311CE00094E42E /* CameraViewController.swift */; };
 		50EAEADA1EFB15A000A3E754 /* SettingsSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EAEAD91EFB15A000A3E754 /* SettingsSwitchView.swift */; };
 		50EAEADC1EFB15DC00A3E754 /* ActivitySwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EAEADB1EFB15DC00A3E754 /* ActivitySwitch.swift */; };
-		50F2B20E1F0EE70100B1CA0D /* DFUAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F2B20D1F0EE70100B1CA0D /* DFUAlertViewController.swift */; };
 		50FA3A2C1E3BB40C001202B0 /* TapAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA3A2B1E3BB40C001202B0 /* TapAnimationView.swift */; };
 		50FA3A2E1E3BF2B5001202B0 /* camera.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 50FA3A2D1E3BF2B5001202B0 /* camera.mp4 */; };
 		61AF2F061734442D0044192F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61AF2F041734442D0044192F /* InfoPlist.strings */; };
@@ -478,7 +456,6 @@
 				4321D59A1BAA1D56000C4A68 /* ReactiveRinglyKit.framework in Embed Frameworks */,
 				434418C71D9B2371009866F2 /* DFULibrary.framework in Embed Frameworks */,
 				430F2CD11BA8B16400073E5A /* RinglyExtensions.framework in Embed Frameworks */,
-				437877941BB5D86F00878DD3 /* RinglyDFU.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +481,6 @@
 		430210601D3FBA0400C18699 /* ConfigurationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationsViewController.swift; sourceTree = "<group>"; };
 		4305D2601C3DDB05007E063C /* URLAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLAction.swift; sourceTree = "<group>"; };
 		4305D2621C3EB9C9007E063C /* URLActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLActionTests.swift; sourceTree = "<group>"; };
-		4305D2641C3EC8C1007E063C /* DFUURLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUURLViewController.swift; sourceTree = "<group>"; };
 		4305F26D1C4EF73E000E8EA4 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = ../Carthage/Build/iOS/HockeySDK.framework; sourceTree = "<group>"; };
 		43084DB21D3063CE00C613C1 /* PreferencesActivityPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesActivityPickerView.swift; sourceTree = "<group>"; };
 		43084DB41D30791700C613C1 /* PreferencesActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesActivityViewController.swift; sourceTree = "<group>"; };
@@ -517,16 +493,6 @@
 		430F2D221BA8BF1000073E5A /* UIView+Ringly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ringly.h"; sourceTree = "<group>"; };
 		430F2D231BA8BF1000073E5A /* UIView+Ringly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ringly.m"; sourceTree = "<group>"; };
 		431093EA1C7CC7A9005011B5 /* UnderlineDetailControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineDetailControl.swift; sourceTree = "<group>"; };
-		4311132B1DF74C2C005C6719 /* DFUUnderlineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUUnderlineLabel.swift; sourceTree = "<group>"; };
-		4311132D1DF759BA005C6719 /* DFUFakePhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUFakePhoneView.h; sourceTree = "<group>"; };
-		4311132E1DF759BA005C6719 /* DFUFakePhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUFakePhoneView.m; sourceTree = "<group>"; };
-		431113301DF75AE7005C6719 /* DFUToggleBluetoothFakePhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUToggleBluetoothFakePhoneView.h; sourceTree = "<group>"; };
-		431113311DF75AE7005C6719 /* DFUToggleBluetoothFakePhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUToggleBluetoothFakePhoneView.m; sourceTree = "<group>"; };
-		431113331DF75B38005C6719 /* DFUToggleArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUToggleArrow.h; sourceTree = "<group>"; };
-		431113341DF75B38005C6719 /* DFUToggleArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUToggleArrow.m; sourceTree = "<group>"; };
-		431113361DF75E69005C6719 /* DFULightningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFULightningView.h; sourceTree = "<group>"; };
-		431113371DF75E69005C6719 /* DFULightningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFULightningView.m; sourceTree = "<group>"; };
-		431113391DF76948005C6719 /* RingProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingProgressIndicator.swift; sourceTree = "<group>"; };
 		4311BD951C52BB730092D5AD /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		4311BD9B1C52CAD30092D5AD /* VideoBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBackgroundViewController.swift; sourceTree = "<group>"; };
 		4311BD9D1C52CBFE0092D5AD /* AuthenticationButtonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationButtonsViewController.swift; sourceTree = "<group>"; };
@@ -569,7 +535,6 @@
 		43316C821BC4413C00DB30F6 /* AnalyticsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
 		43316C871BC5BC4400DB30F6 /* PeripheralRegistrationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralRegistrationService.swift; sourceTree = "<group>"; };
 		43316C8B1BC6B65900DB30F6 /* UpdatesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesService.swift; sourceTree = "<group>"; };
-		43316C8F1BC6DF9600DB30F6 /* DFUPackageBuilderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUPackageBuilderViewController.swift; sourceTree = "<group>"; };
 		4331DEB71CE3A9DC00A5ABAD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		4331DEB81CE3A9DC00A5ABAD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		4333638F1D1D7F60001E31C0 /* RLYPeripheral+ANCSV2Matching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLYPeripheral+ANCSV2Matching.swift"; sourceTree = "<group>"; };
@@ -679,7 +644,6 @@
 		436ADEAE1D99B34800AE8405 /* PreferencesContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesContentViewController.swift; sourceTree = "<group>"; };
 		436ADEB01D99BF1C00AE8405 /* PreferencesBodyDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesBodyDataViewController.swift; sourceTree = "<group>"; };
 		436CA0011D08CCE300CD7E51 /* DayToWeekTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayToWeekTransitionController.swift; sourceTree = "<group>"; };
-		436E27E81CB8040900D4663C /* DFUStartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUStartingViewController.swift; sourceTree = "<group>"; };
 		436E27F01CB8474F00D4663C /* NotifiedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifiedEvent.swift; sourceTree = "<group>"; };
 		436E27F21CB84B7D00D4663C /* InitializableMutablePropertyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitializableMutablePropertyProtocol.swift; sourceTree = "<group>"; };
 		436F1D8C1C46E1C100012122 /* ButtonControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonControl.swift; sourceTree = "<group>"; };
@@ -694,9 +658,6 @@
 		4375789E1CBE935000243662 /* NSUUID+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUUID+Coding.swift"; sourceTree = "<group>"; };
 		437578A01CBE961F00243662 /* NSUUID+CodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUUID+CodingTests.swift"; sourceTree = "<group>"; };
 		437789301D1ABB3700A234A2 /* GraphGoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphGoalView.swift; sourceTree = "<group>"; };
-		437789321D1AEEDA00A234A2 /* DFUToggleBluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUToggleBluetoothViewController.swift; sourceTree = "<group>"; };
-		437789341D1AEF0000A234A2 /* DFUCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUCompleteViewController.swift; sourceTree = "<group>"; };
-		437877921BB5D86F00878DD3 /* RinglyDFU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RinglyDFU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4378B4241B547CCC00B175DE /* ResettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResettingViewController.h; sourceTree = "<group>"; };
 		4378B4251B547CCC00B175DE /* ResettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResettingViewController.m; sourceTree = "<group>"; };
 		437C64BC1CA44A0400B556B4 /* PeripheralReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralReference.swift; sourceTree = "<group>"; };
@@ -769,8 +730,6 @@
 		43A56FD11C6BF3D800F69963 /* ForegroundBackgroundTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForegroundBackgroundTransition.swift; sourceTree = "<group>"; };
 		43A5AC9A1C810930009AFD53 /* CrossDissolveTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossDissolveTransitionController.swift; sourceTree = "<group>"; };
 		43A7863D1C8DE8C90097FEA9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		43A7913C1B16111500361553 /* DFUProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUProgressView.h; sourceTree = "<group>"; };
-		43A7913D1B16111500361553 /* DFUProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUProgressView.m; sourceTree = "<group>"; };
 		43A803551DC0F8B30001C696 /* ApplicationsServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsServiceTests.swift; sourceTree = "<group>"; };
 		43A803591DC13E760001C696 /* PeripheralActivityUnsupportedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralActivityUnsupportedViewController.swift; sourceTree = "<group>"; };
 		43AA9D951E4D051C00ABEED5 /* CameraButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraButtonsView.swift; sourceTree = "<group>"; };
@@ -822,12 +781,6 @@
 		43D78E151C74D39F00C29ECF /* RuleVerificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleVerificationView.swift; sourceTree = "<group>"; };
 		43DB78A81DB51D5300FFAFA4 /* UrbanAirshipDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrbanAirshipDelegate.swift; sourceTree = "<group>"; };
 		43DD20D61E524AC900789CA0 /* PhotoTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTitleView.swift; sourceTree = "<group>"; };
-		43DDDA0E1CB70C2600A9C108 /* DFUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUViewController.swift; sourceTree = "<group>"; };
-		43DDDA131CB7E74D00A9C108 /* DFUActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUActivityViewController.swift; sourceTree = "<group>"; };
-		43DDDA151CB7EB5200A9C108 /* DFUProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUProgressViewController.swift; sourceTree = "<group>"; };
-		43DDDA171CB7F41200A9C108 /* DFUOpenSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUOpenSettingsViewController.swift; sourceTree = "<group>"; };
-		43DDDA1F1CB7FA2F00A9C108 /* DFUChargePeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUChargePeripheralViewController.swift; sourceTree = "<group>"; };
-		43DDDA211CB7FC1C00A9C108 /* DFUChargePhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUChargePhoneViewController.swift; sourceTree = "<group>"; };
 		43DFF5341DEF358A0009257F /* ColorSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
 		43DFF5361DEF3DA00009257F /* ColorSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSliderCell.swift; sourceTree = "<group>"; };
 		43DFF5381DEF42FE0009257F /* CheckboxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxCell.swift; sourceTree = "<group>"; };
@@ -850,8 +803,6 @@
 		43E497FA1DEDF64F00434CD5 /* UpdatesServiceVersionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesServiceVersionsTests.swift; sourceTree = "<group>"; };
 		43E498001DEDF8E400434CD5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		43E972331DC2ACEB00ABE087 /* RLYPeripheral+ANCSV1NoAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLYPeripheral+ANCSV1NoAction.swift"; sourceTree = "<group>"; };
-		43ECA1671B59AD5400C0F8B2 /* DFUOpenSettingsSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUOpenSettingsSubview.h; sourceTree = "<group>"; };
-		43ECA1681B59AD5400C0F8B2 /* DFUOpenSettingsSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUOpenSettingsSubview.m; sourceTree = "<group>"; };
 		43F21CDE1CE66EE30066CE40 /* SavedPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedPeripheral.swift; sourceTree = "<group>"; };
 		43F21CE31CEA58CE0066CE40 /* DeveloperTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperTabBarViewController.swift; sourceTree = "<group>"; };
 		43F21CE61CEA5CCB0066CE40 /* ActivityIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIntroViewController.swift; sourceTree = "<group>"; };
@@ -925,7 +876,6 @@
 		50E75E771E311CE00094E42E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		50EAEAD91EFB15A000A3E754 /* SettingsSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSwitchView.swift; sourceTree = "<group>"; };
 		50EAEADB1EFB15DC00A3E754 /* ActivitySwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySwitch.swift; sourceTree = "<group>"; };
-		50F2B20D1F0EE70100B1CA0D /* DFUAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUAlertViewController.swift; sourceTree = "<group>"; };
 		50FA3A2B1E3BB40C001202B0 /* TapAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapAnimationView.swift; sourceTree = "<group>"; };
 		50FA3A2D1E3BF2B5001202B0 /* camera.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = camera.mp4; sourceTree = "<group>"; };
 		61AF2EF71734442D0044192F /* Ringly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ringly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -997,7 +947,6 @@
 				434418C61D9B2371009866F2 /* DFULibrary.framework in Frameworks */,
 				4331DEBA1CE3A9DC00A5ABAD /* RealmSwift.framework in Frameworks */,
 				430F2C201BA89AA700073E5A /* RinglyKit.framework in Frameworks */,
-				437877931BB5D86F00878DD3 /* RinglyDFU.framework in Frameworks */,
 				430F2C7A1BA8AE6400073E5A /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1041,7 +990,6 @@
 				434418C51D9B2371009866F2 /* DFULibrary.framework */,
 				435E3CD21CB54B260046F3D7 /* RinglyAPI.framework */,
 				43A0C7E41CD3BD2F00BD763C /* RinglyActivityTracking.framework */,
-				437877921BB5D86F00878DD3 /* RinglyDFU.framework */,
 				4321D5981BAA1D56000C4A68 /* ReactiveRinglyKit.framework */,
 				430F2CCF1BA8B16400073E5A /* RinglyExtensions.framework */,
 				430F2B9D1BA87F7A00073E5A /* RinglyKit.framework */,
@@ -1063,22 +1011,6 @@
 				4321D5A01BAA1E8A000C4A68 /* Result.framework */,
 			);
 			name = Carthage;
-			sourceTree = "<group>";
-		};
-		4311132A1DF74C20005C6719 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4311132D1DF759BA005C6719 /* DFUFakePhoneView.h */,
-				4311132E1DF759BA005C6719 /* DFUFakePhoneView.m */,
-				431113361DF75E69005C6719 /* DFULightningView.h */,
-				431113371DF75E69005C6719 /* DFULightningView.m */,
-				431113331DF75B38005C6719 /* DFUToggleArrow.h */,
-				431113341DF75B38005C6719 /* DFUToggleArrow.m */,
-				431113301DF75AE7005C6719 /* DFUToggleBluetoothFakePhoneView.h */,
-				431113311DF75AE7005C6719 /* DFUToggleBluetoothFakePhoneView.m */,
-				4311132B1DF74C2C005C6719 /* DFUUnderlineLabel.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		4319EE0C1D9AC62900252AEF /* HealthKit */ = {
@@ -1389,18 +1321,6 @@
 			name = "Urban Airship";
 			sourceTree = "<group>";
 		};
-		436795831B14C6FC00C9BB6A /* DFU */ = {
-			isa = PBXGroup;
-			children = (
-				437EC50C1B223137005ABE98 /* Child View Controller */,
-				4305D2641C3EC8C1007E063C /* DFUURLViewController.swift */,
-				43316C8F1BC6DF9600DB30F6 /* DFUPackageBuilderViewController.swift */,
-				43DDDA0E1CB70C2600A9C108 /* DFUViewController.swift */,
-				50F2B20D1F0EE70100B1CA0D /* DFUAlertViewController.swift */,
-			);
-			name = DFU;
-			sourceTree = "<group>";
-		};
 		436888CA1C894105003C2DB6 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1510,17 +1430,6 @@
 				43F425AA1E0049FD00BA4BF9 /* PeripheralApplicationErrorEvent.swift */,
 			);
 			name = Events;
-			sourceTree = "<group>";
-		};
-		437EC50C1B223137005ABE98 /* Child View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				43F953011DEF832600D29038 /* Progress */,
-				43F953031DEF835A00D29038 /* Setup */,
-				43F953021DEF833400D29038 /* User Action Requests */,
-				4311132A1DF74C20005C6719 /* Views */,
-			);
-			name = "Child View Controller";
 			sourceTree = "<group>";
 		};
 		4381C2351DDA7D8000AD4721 /* Analytics */ = {
@@ -1969,7 +1878,6 @@
 				436A24161AEAAFE500600B12 /* Connect */,
 				436888CA1C894105003C2DB6 /* Containers */,
 				4324B1FD1B2B476600D60994 /* Developer Tools */,
-				436795831B14C6FC00C9BB6A /* DFU */,
 				43FD34E01C16008C0008C0D5 /* Onboarding */,
 				43BEE65E1CC93707003F245F /* Preferences */,
 				435A15711DE371D70021A959 /* Reviews */,
@@ -2150,40 +2058,6 @@
 				43F952FD1DEF52CA00D29038 /* AlertImageTextContent.swift */,
 			);
 			name = Alert;
-			sourceTree = "<group>";
-		};
-		43F953011DEF832600D29038 /* Progress */ = {
-			isa = PBXGroup;
-			children = (
-				43DDDA131CB7E74D00A9C108 /* DFUActivityViewController.swift */,
-				437789341D1AEF0000A234A2 /* DFUCompleteViewController.swift */,
-				43DDDA151CB7EB5200A9C108 /* DFUProgressViewController.swift */,
-				43A7913C1B16111500361553 /* DFUProgressView.h */,
-				43A7913D1B16111500361553 /* DFUProgressView.m */,
-				431113391DF76948005C6719 /* RingProgressIndicator.swift */,
-			);
-			name = Progress;
-			sourceTree = "<group>";
-		};
-		43F953021DEF833400D29038 /* User Action Requests */ = {
-			isa = PBXGroup;
-			children = (
-				43DDDA1F1CB7FA2F00A9C108 /* DFUChargePeripheralViewController.swift */,
-				43DDDA211CB7FC1C00A9C108 /* DFUChargePhoneViewController.swift */,
-				43ECA1671B59AD5400C0F8B2 /* DFUOpenSettingsSubview.h */,
-				43ECA1681B59AD5400C0F8B2 /* DFUOpenSettingsSubview.m */,
-				43DDDA171CB7F41200A9C108 /* DFUOpenSettingsViewController.swift */,
-				437789321D1AEEDA00A234A2 /* DFUToggleBluetoothViewController.swift */,
-			);
-			name = "User Action Requests";
-			sourceTree = "<group>";
-		};
-		43F953031DEF835A00D29038 /* Setup */ = {
-			isa = PBXGroup;
-			children = (
-				436E27E81CB8040900D4663C /* DFUStartingViewController.swift */,
-			);
-			name = Setup;
 			sourceTree = "<group>";
 		};
 		43F953061DEF884500D29038 /* Peripherals */ = {
@@ -2691,7 +2565,6 @@
 				4397EEC81CAD8F1800D8A5D6 /* InitializableOptionalType.swift in Sources */,
 				431E3AE61C3F2A050034FEFC /* TopbarView.swift in Sources */,
 				D7A3237B1EA9304E00273A94 /* ConnectivityIndicatorControl.swift in Sources */,
-				43316C901BC6DF9600DB30F6 /* DFUPackageBuilderViewController.swift in Sources */,
 				4385DCC71DF8A6780029EE62 /* PeripheralBoxView.swift in Sources */,
 				43F21CE71CEA5CCB0066CE40 /* ActivityIntroViewController.swift in Sources */,
 				4311BDA71C52D5220092D5AD /* BorderedField.swift in Sources */,
@@ -2701,15 +2574,12 @@
 				4356A2071BBC772100728107 /* ContactConfiguration.swift in Sources */,
 				4346DB111D898CD700C569E5 /* GraphData.swift in Sources */,
 				4348BA7A1DE4DBB200074B86 /* ReviewsFeedbackViewController.swift in Sources */,
-				43DDDA221CB7FC1C00A9C108 /* DFUChargePhoneViewController.swift in Sources */,
 				43F952F71DEF46CD00D29038 /* AvatarControl.swift in Sources */,
 				438E035C1CAAC96C00960251 /* PeripheralsService.swift in Sources */,
 				61AF2F081734442D0044192F /* main.m in Sources */,
 				43B19EFA1DA1F7A400CF0E54 /* ScaleTransitionController.swift in Sources */,
-				431113321DF75AE7005C6719 /* DFUToggleBluetoothFakePhoneView.m in Sources */,
 				50B506AD1F055BD2008CF97E /* ActivityDayProgressCell.swift in Sources */,
 				43F952FC1DEF503600D29038 /* AlertContentView.swift in Sources */,
-				50F2B20E1F0EE70100B1CA0D /* DFUAlertViewController.swift in Sources */,
 				437789311D1ABB3700A234A2 /* GraphGoalView.swift in Sources */,
 				43E497F91DEDED3200434CD5 /* Resources+Extensions.swift in Sources */,
 				43F9530F1DEF8E5600D29038 /* DeveloperCharacteristicsViewController.swift in Sources */,
@@ -2719,8 +2589,6 @@
 				43AA9D9B1E4D188D00ABEED5 /* CameraOnboardingTitleView.swift in Sources */,
 				43F21CEE1CECBBA30066CE40 /* TickTitleSupplementaryView.swift in Sources */,
 				D7B158C51ED38DC0003E5ACE /* GuidedAudioPlayerControlView.swift in Sources */,
-				436E27E91CB8040900D4663C /* DFUStartingViewController.swift in Sources */,
-				4311132C1DF74C2C005C6719 /* DFUUnderlineLabel.swift in Sources */,
 				435A2C4B1C20D87B00DB2858 /* OnboardingPhoneView.swift in Sources */,
 				43CF2ECF1D302E05003E2473 /* PreferencesHelpViewController.swift in Sources */,
 				4375789D1CBE931C00243662 /* Set+InitializableArrayType.swift in Sources */,
@@ -2759,7 +2627,6 @@
 				438AAF621D80ACB100F1CD96 /* OnboardingCaloriesView.swift in Sources */,
 				43F953051DEF843700D29038 /* LogMessageCell.swift in Sources */,
 				4381C24F1DDD107B00AD4721 /* AlertControlPad.swift in Sources */,
-				437789351D1AEF0000A234A2 /* DFUCompleteViewController.swift in Sources */,
 				4345D18C1DB3FF04000054F9 /* UIApplication+Airship.swift in Sources */,
 				43512BAF1DBA7E7600787ED6 /* ActivityTracking+Coding.swift in Sources */,
 				43316C831BC4413C00DB30F6 /* AnalyticsService.swift in Sources */,
@@ -2809,7 +2676,6 @@
 				4393F0731DAC4F0100832975 /* AttributedStringProtocol+Onboarding.swift in Sources */,
 				43E972341DC2ACEB00ABE087 /* RLYPeripheral+ANCSV1NoAction.swift in Sources */,
 				437C64BF1CA44A4100B556B4 /* RLYPeripheral+VerifyPaired.swift in Sources */,
-				4305D2651C3EC8C1007E063C /* DFUURLViewController.swift in Sources */,
 				43084DB31D3063CE00C613C1 /* PreferencesActivityPickerView.swift in Sources */,
 				D7FD38491EC34F6C003E221A /* MindfulnessExerciseConfig.swift in Sources */,
 				433363961D230759001E31C0 /* BatteryView.swift in Sources */,
@@ -2817,8 +2683,6 @@
 				438AAF4D1D7F7C8800F1CD96 /* OnboardingActivityViewController.swift in Sources */,
 				502941511EF45A9400312E78 /* MindfulAlertViewController.swift in Sources */,
 				4311BDA91C56D2990092D5AD /* PeripheralReferenceViewController.swift in Sources */,
-				431113351DF75B38005C6719 /* DFUToggleArrow.m in Sources */,
-				43ECA1691B59AD5400C0F8B2 /* DFUOpenSettingsSubview.m in Sources */,
 				43FC39791E36C2D200680A1C /* DateFormatter+Init.swift in Sources */,
 				437C64C81CA497F900B556B4 /* AuthenticationAnalyticsEvents.swift in Sources */,
 				D792313E1ECCF21600F6815D /* OnboardingGoalPickerView.swift in Sources */,
@@ -2830,12 +2694,10 @@
 				43950ECC1BFBA51900FF6D23 /* ContactsError.swift in Sources */,
 				434E33E01C3C62C300E11E51 /* RinglyAlertShadowView.m in Sources */,
 				433E42BE1DFF48C600985486 /* AnalyticsSuperPropertyStore.swift in Sources */,
-				43DDDA201CB7FA2F00A9C108 /* DFUChargePeripheralViewController.swift in Sources */,
 				43BCD96B1BFD24C30020E977 /* Preferences.swift in Sources */,
 				434167921E4BDAE100000E00 /* UIButton+Reactive.swift in Sources */,
 				43512BB51DBAE9B800787ED6 /* PeripheralReferenceView.swift in Sources */,
 				43DFF5351DEF358A0009257F /* ColorSliderView.swift in Sources */,
-				43DDDA0F1CB70C2600A9C108 /* DFUViewController.swift in Sources */,
 				43630FF71C404CC100851F5E /* PeripheralNotification.swift in Sources */,
 				4361494C1C8E14F500E30658 /* AlertBackgroundView.swift in Sources */,
 				43FEB5951CF612D6006614CC /* Configurables.swift in Sources */,
@@ -2870,9 +2732,7 @@
 				43CF2ED71D30351B003E2473 /* PreferencesSwitch.swift in Sources */,
 				434167901E4BBB6D00000E00 /* AVCaptureSession+Reactive.swift in Sources */,
 				43A7863E1C8DE8C90097FEA9 /* GradientView.swift in Sources */,
-				43DDDA161CB7EB5200A9C108 /* DFUProgressViewController.swift in Sources */,
 				436888C91C8940F9003C2DB6 /* ContainerViewController.swift in Sources */,
-				4311132F1DF759BA005C6719 /* DFUFakePhoneView.m in Sources */,
 				432B23671D36D4C700A71DB9 /* PreferencesHKQuantity.swift in Sources */,
 				43DD20D71E524AC900789CA0 /* PhotoTitleView.swift in Sources */,
 				435FECAF1BE26D4B001746E1 /* RLYPeripheral+Writing.swift in Sources */,
@@ -2920,7 +2780,6 @@
 				436ADEA11D91AAE000AE8405 /* NSDateComponents+Coding.swift in Sources */,
 				434E34041C3DAFDE00E11E51 /* UIColor+Ringly.swift in Sources */,
 				436E27F31CB84B7D00D4663C /* InitializableMutablePropertyProtocol.swift in Sources */,
-				43DDDA141CB7E74D00A9C108 /* DFUActivityViewController.swift in Sources */,
 				50B7C9811E256E1900169E16 /* NotificationConfigurationCell.swift in Sources */,
 				D7C234811E9E9C9F00262A8A /* RLYPeripheral+RoseRewrite.swift in Sources */,
 				438AAF5E1D80803D00F1CD96 /* OnboardingMapView.swift in Sources */,
@@ -2935,7 +2794,6 @@
 				D7A4B5DC1E85A73C0002C5BB /* SelectGoalPickerView.swift in Sources */,
 				503120FA1E314DB200C0E35D /* NotificationAlert.swift in Sources */,
 				4363F6461E0843740048F2CE /* AlertActivityContent.swift in Sources */,
-				43DDDA181CB7F41200A9C108 /* DFUOpenSettingsViewController.swift in Sources */,
 				43F9C0871E365B0500B1E62E /* Collection+Joined.swift in Sources */,
 				D7B158C91ED38DD9003E5ACE /* GuidedAudioCompleteView.swift in Sources */,
 				50AB734B1EFB147000414777 /* ActivitySwitchViewController.swift in Sources */,
@@ -2943,7 +2801,6 @@
 				508233691EEA004A0011F00A /* MindfulNotification.swift in Sources */,
 				43A5AC9B1C810930009AFD53 /* CrossDissolveTransitionController.swift in Sources */,
 				434E33EF1C3C62E300E11E51 /* ActivityController.swift in Sources */,
-				431113381DF75E69005C6719 /* DFULightningView.m in Sources */,
 				439482801CB2D9AF00E1AE6A /* InitializableArrayType.swift in Sources */,
 				43BA85A11CDA8E4E0085B833 /* ANCSV1Extensions.swift in Sources */,
 				436ADE9E1D90744800AE8405 /* ActivityStatisticsController.swift in Sources */,
@@ -2986,7 +2843,6 @@
 				50335EC11E392C79003E8AE7 /* PHPhotoAlbum+Reactive.swift in Sources */,
 				436ADEAF1D99B34800AE8405 /* PreferencesContentViewController.swift in Sources */,
 				4369C0B91D087FFC00C85787 /* ActivityDayViewController.swift in Sources */,
-				437789331D1AEEDA00A234A2 /* DFUToggleBluetoothViewController.swift in Sources */,
 				4378B4261B547CCC00B175DE /* ResettingViewController.m in Sources */,
 				43F21CFF1CEDF7640066CE40 /* ActivityProgressControl.swift in Sources */,
 				5066EF491E390D9200319F01 /* FlashView.swift in Sources */,
@@ -3005,7 +2861,6 @@
 				43BC6E441E145A06007606DA /* ApplicationsEditPromptCell.swift in Sources */,
 				43F21CDF1CE66EE30066CE40 /* SavedPeripheral.swift in Sources */,
 				4396B4711DD0D21F001638BF /* UIViewController+PresentDFU.swift in Sources */,
-				4311133A1DF76948005C6719 /* RingProgressIndicator.swift in Sources */,
 				D714E5F01E8312BB0080B49A /* SelectGoalViewController.swift in Sources */,
 				43D24BA71D480E8B0070207A /* ContactsOnboardingViewController.swift in Sources */,
 				43E26A361D2ED0D100833EE6 /* RemovePeripheralViewController.swift in Sources */,
@@ -3041,7 +2896,6 @@
 				43C649031DBEB1A5001D369D /* AnalyticsDFUEvent.swift in Sources */,
 				435399331DA55EB8002260EE /* NavigationBar.swift in Sources */,
 				43F21CF51CECFFE40066CE40 /* GraphColumnCell.swift in Sources */,
-				43A7913E1B16111500361553 /* DFUProgressView.m in Sources */,
 				43AA9D9D1E4D191700ABEED5 /* CameraOnboardingButtonsView.swift in Sources */,
 				43F952FE1DEF52CA00D29038 /* AlertImageTextContent.swift in Sources */,
 				D7B158C71ED38DCF003E5ACE /* GuidedAudioDownloadingView.swift in Sources */,

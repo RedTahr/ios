@@ -6,7 +6,6 @@ import RinglyExtensions
 import ReactiveSwift
 import Result
 import RinglyAPI
-import RinglyDFU
 import UIKit
 import Fabric
 import Crashlytics
