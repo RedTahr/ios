@@ -15,7 +15,7 @@ extension ObserverProtocol where Error == NSError
         }
         else
         {
-            send(error: error as? NSError ?? UnknownError() as NSError)
+            send(error: error as NSError? ?? UnknownError() as NSError)
         }
     }
 
@@ -33,7 +33,7 @@ extension ObserverProtocol where Error == NSError
         }
         else
         {
-            send(error: error as? NSError ?? UnknownError() as NSError)
+            send(error: error as NSError? ?? UnknownError() as NSError)
         }
     }
 }

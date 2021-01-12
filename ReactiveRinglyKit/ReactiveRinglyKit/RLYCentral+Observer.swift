@@ -109,11 +109,11 @@ private final class ReactiveCentralObserver: NSObject, RLYCentralObserver
 
     @objc func central(_ central: RLYCentral, didFailToConnect peripheral: RLYPeripheral, withError error: Error?)
     {
-        connectionEvent(.didFailToConnect(peripheral: peripheral, error: error as? NSError))
+        connectionEvent(.didFailToConnect(peripheral: peripheral, error: error as NSError?))
     }
 
     @objc func central(_ central: RLYCentral, didDisconnectFrom peripheral: RLYPeripheral, withError error: Error?)
     {
-        connectionEvent(.didDisconnect(peripheral: peripheral, error: error as? NSError))
+        connectionEvent(.didDisconnect(peripheral: peripheral, error: error as NSError?))
     }
 }

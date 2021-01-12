@@ -23,9 +23,6 @@
       location = "group:RinglyDFU/RinglyDFU.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:IOS-DFU-Library/DFULibrary.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:TestPeripheral/TestPeripheral.xcodeproj">
    </FileRef>
 </Workspace>

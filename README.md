@@ -1,42 +1,8 @@
-# a fork of Ringlys iOS Ringly app
+# xcode8 branch
 
-todo: get this repo buildable in August 2020, using XCode 11.6, under macOS 10.15.6 Catalina.
-- download xcode 10.1 as its needed to migrate swift 3.x source code, which some-of/this is written in.
+a new branch from a clone of the origingal ringly/ios.
 
-### initial hurdle, on running ./Tools/bootstrap:
-- "Parse error: expected submodule commit SHA in output of task (ls-tree -z HEAD IOS-DFU-Library) but encountered:" 
-
-based on https://github.com/Carthage/Carthage/issues/135 have 
-run "carthage bootstrap --no-use-binaries --platform ios" from 
-a clean folder containing only the Cartfile from this repo.
-
-That currently hits a snag with Audioplayer failing to build, due to the above Swift 3.x issue, getting XCode 10.1 resolves that.
-There are a few other Carthage build failures, running "carthage update --platform iOS" in an empty folder with a cartfile containing
-one entry at a time has got most things downloaded and built, with the exception of ReactiveCocoa
-
-### XCode 10.1
-
-opened Ringly fine, suggested things, applied suggestions without issue, offers to migrate to Swift 4.x when the project can be built.
-
-
-### DFU issue - Swift 2.0 / XCode 8.3
-
-DFU library is written in Swift 2.0, which wants XCode 8.x to migrate...which doesn't run under Catalina.
-Might need to try a VM hackintosh, or get hold of an older mac, or see what happens by saying the DFU library is Swift 3.0 and then manually
-trying to fix the 200+ "this has been deprecated in Swift 3.0" warnings that show up.
-But as this for firmware updates its simpler to chop it and the Ringly DFU project/references out, then try migrating.
-
-### ReactiveCocoa
-
-Carthage can't get this to build, have opened it in XCode and updated a few things as suggested by the compiler, but haven't got it going yet. So Ringly continues
-to not built as ReactiveCocoa is missing :-)
-
-Most work is being carried out in the removed-dfu branch at time of writing.
-
-
-original readme below
-================================================
-
+worked on under Sierra with XCode 8.3.3
 
 # Ringly for iOS
 

@@ -15,7 +15,7 @@ extension SignalProducerProtocol
     */
     
     public func debounce(_ interval: TimeInterval,
-                on scheduler: DateSchedulerProtocol,
+                on scheduler: DateScheduler,
                 valuesPassingTest test: @escaping (Value) -> Bool)
         -> SignalProducer<Value, Error>
     {
@@ -33,7 +33,7 @@ extension SignalProducerProtocol
      - parameter scheduler: The scheduler to interrupt the receiver on.
      */
     
-    public func takeFor(interval: DispatchTimeInterval, on scheduler: DateSchedulerProtocol) ->
+    public func takeFor(interval: DispatchTimeInterval, on scheduler: DateScheduler) ->
         SignalProducer<Value, Error>
     {
         if interval.nanoseconds > 0
@@ -56,7 +56,7 @@ extension SignalProducerProtocol
      - parameter scheduler: The scheduler to time out on.
      */
     
-    public func timeoutAndComplete(afterInterval interval: TimeInterval, on scheduler: DateSchedulerProtocol)
+    public func timeoutAndComplete(afterInterval interval: TimeInterval, on scheduler: DateScheduler)
         -> SignalProducer<Value, Error>
     {
         return materialize()
@@ -81,7 +81,7 @@ extension SignalProducerProtocol
      - parameter scheduler: The scheduler to apply the time interval on. It will _not_ apply to nexts sent due to the
                             limit.
      */
-    public func buffer(limit: Int, timeout: DispatchTimeInterval, on scheduler: DateSchedulerProtocol)
+    public func buffer(limit: Int, timeout: DispatchTimeInterval, on scheduler: DateScheduler)
         -> SignalProducer<[Value], Error>
     {
         return SignalProducer { observer, disposable in
@@ -128,7 +128,7 @@ extension SignalProducerProtocol where Value == Bool
      */
     public func variableImmediateTimer(trueInterval: DispatchTimeInterval,
                                        falseInterval: DispatchTimeInterval,
-                                       on scheduler: DateSchedulerProtocol)
+                                       on scheduler: DateScheduler)
                                        -> SignalProducer<Date, Error>
     {
         return flatMap(.latest, transform: { value in
@@ -143,7 +143,7 @@ extension SignalProducerProtocol where Value == Bool
  - parameter interval:  The timer interval.
  - parameter scheduler: The scheduler to use.
  */
-public func immediateTimer(interval: DispatchTimeInterval, on scheduler: DateSchedulerProtocol)
+public func immediateTimer(interval: DispatchTimeInterval, on scheduler: DateScheduler)
     -> SignalProducer<Date, NoError>
 {
     return SignalProducer.`defer` {
@@ -155,7 +155,7 @@ public func immediateTimer(interval: DispatchTimeInterval, on scheduler: DateSch
 }
 
 
-public func timerUntil(date: Date, on scheduler: DateSchedulerProtocol) -> SignalProducer<Date, NoError>
+public func timerUntil(date: Date, on scheduler: DateScheduler) -> SignalProducer<Date, NoError>
 {
     return SignalProducer.`defer` {
         let currentDate = scheduler.currentDate
