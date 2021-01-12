@@ -97,8 +97,6 @@
 		4341678E1E4BB01C00000E00 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341678D1E4BB01C00000E00 /* CaptureSession.swift */; };
 		434167901E4BBB6D00000E00 /* AVCaptureSession+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341678F1E4BBB6D00000E00 /* AVCaptureSession+Reactive.swift */; };
 		434167921E4BDAE100000E00 /* UIButton+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434167911E4BDAE100000E00 /* UIButton+Reactive.swift */; };
-		434418C61D9B2371009866F2 /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434418C51D9B2371009866F2 /* DFULibrary.framework */; };
-		434418C71D9B2371009866F2 /* DFULibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 434418C51D9B2371009866F2 /* DFULibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43448DCD1E4A848200E21021 /* Preferences+Engagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43448DCC1E4A848200E21021 /* Preferences+Engagement.swift */; };
 		43448DCF1E4A873700E21021 /* EngagementNotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43448DCE1E4A873700E21021 /* EngagementNotificationsService.swift */; };
 		434531941C7CF1E9000E708D /* UnderlineLinkControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434531931C7CF1E9000E708D /* UnderlineLinkControl.swift */; };
@@ -197,8 +195,6 @@
 		437789311D1ABB3700A234A2 /* GraphGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437789301D1ABB3700A234A2 /* GraphGoalView.swift */; };
 		437789331D1AEEDA00A234A2 /* DFUToggleBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437789321D1AEEDA00A234A2 /* DFUToggleBluetoothViewController.swift */; };
 		437789351D1AEF0000A234A2 /* DFUCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437789341D1AEF0000A234A2 /* DFUCompleteViewController.swift */; };
-		437877931BB5D86F00878DD3 /* RinglyDFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437877921BB5D86F00878DD3 /* RinglyDFU.framework */; };
-		437877941BB5D86F00878DD3 /* RinglyDFU.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 437877921BB5D86F00878DD3 /* RinglyDFU.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4378B4261B547CCC00B175DE /* ResettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4378B4251B547CCC00B175DE /* ResettingViewController.m */; };
 		437C64BD1CA44A0400B556B4 /* PeripheralReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C64BC1CA44A0400B556B4 /* PeripheralReference.swift */; };
 		437C64BF1CA44A4100B556B4 /* RLYPeripheral+VerifyPaired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437C64BE1CA44A4100B556B4 /* RLYPeripheral+VerifyPaired.swift */; };
@@ -421,6 +417,7 @@
 		50FA3A2E1E3BF2B5001202B0 /* camera.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 50FA3A2D1E3BF2B5001202B0 /* camera.mp4 */; };
 		61AF2F061734442D0044192F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61AF2F041734442D0044192F /* InfoPlist.strings */; };
 		61AF2F081734442D0044192F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AF2F071734442D0044192F /* main.m */; };
+		C7C90D1925AD98DA006676AD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C90D1825AD98DA006676AD /* HealthKit.framework */; };
 		D714E5ED1E8304F50080B49A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D714E5EB1E8304F50080B49A /* Crashlytics.framework */; };
 		D714E5EE1E8304F50080B49A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D714E5EC1E8304F50080B49A /* Fabric.framework */; };
 		D714E5F01E8312BB0080B49A /* SelectGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714E5EF1E8312BB0080B49A /* SelectGoalViewController.swift */; };
@@ -476,9 +473,7 @@
 				43A0C7E61CD3BD3900BD763C /* RinglyActivityTracking.framework in Embed Frameworks */,
 				430F2C211BA89AA700073E5A /* RinglyKit.framework in Embed Frameworks */,
 				4321D59A1BAA1D56000C4A68 /* ReactiveRinglyKit.framework in Embed Frameworks */,
-				434418C71D9B2371009866F2 /* DFULibrary.framework in Embed Frameworks */,
 				430F2CD11BA8B16400073E5A /* RinglyExtensions.framework in Embed Frameworks */,
-				437877941BB5D86F00878DD3 /* RinglyDFU.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -933,6 +928,7 @@
 		61AF2F051734442D0044192F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		61AF2F071734442D0044192F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61AF2F091734442D0044192F /* Ringly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ringly-Prefix.pch"; sourceTree = "<group>"; };
+		C7C90D1825AD98DA006676AD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		D714E5EB1E8304F50080B49A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		D714E5EC1E8304F50080B49A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		D714E5EF1E8312BB0080B49A /* SelectGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGoalViewController.swift; sourceTree = "<group>"; };
@@ -989,15 +985,14 @@
 				430F2C101BA8954D00073E5A /* PureLayout.framework in Frameworks */,
 				430F2CD01BA8B16400073E5A /* RinglyExtensions.framework in Frameworks */,
 				4321D5A11BAA1E8A000C4A68 /* Result.framework in Frameworks */,
+				C7C90D1925AD98DA006676AD /* HealthKit.framework in Frameworks */,
 				4321D5991BAA1D56000C4A68 /* ReactiveRinglyKit.framework in Frameworks */,
 				D7EE0D731EC9EA980063404C /* AudioPlayer.framework in Frameworks */,
 				D76201DF1EC78D6E00522347 /* PINCache.framework in Frameworks */,
 				D76201E01EC78D6E00522347 /* PINRemoteImage.framework in Frameworks */,
 				4331DEB91CE3A9DC00A5ABAD /* Realm.framework in Frameworks */,
-				434418C61D9B2371009866F2 /* DFULibrary.framework in Frameworks */,
 				4331DEBA1CE3A9DC00A5ABAD /* RealmSwift.framework in Frameworks */,
 				430F2C201BA89AA700073E5A /* RinglyKit.framework in Frameworks */,
-				437877931BB5D86F00878DD3 /* RinglyDFU.framework in Frameworks */,
 				430F2C7A1BA8AE6400073E5A /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2343,6 +2338,7 @@
 		61AF2EFA1734442D0044192F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7C90D1825AD98DA006676AD /* HealthKit.framework */,
 				D7EE0D721EC9EA980063404C /* AudioPlayer.framework */,
 				D76201DD1EC78D6E00522347 /* PINCache.framework */,
 				D76201DE1EC78D6E00522347 /* PINRemoteImage.framework */,
@@ -2502,7 +2498,7 @@
 						TestTargetID = 61AF2EF61734442D0044192F;
 					};
 					61AF2EF61734442D0044192F = {
-						DevelopmentTeam = P97VTTKZ62;
+						DevelopmentTeam = 6X7HE53YM4;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -3104,7 +3100,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = P97VTTKZ62;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "FUTURE=1";
@@ -3114,7 +3109,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -3126,7 +3121,6 @@
 		432BB9AF1E4416E200F6961F /* Experimental */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ringly/Ringly.entitlements;
@@ -3135,19 +3129,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P97VTTKZ62;
+				DEVELOPMENT_TEAM = 6X7HE53YM4;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(BUILT_PRODUCTS_DIR)/../Release-$(PLATFORM_NAME)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ringly/Ringly-Prefix.pch";
 				INFOPLIST_FILE = "Ringly/Ringly-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "$(BUILT_PRODUCTS_DIR)/../Release-iphoneos";
 				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(BUILT_PRODUCTS_DIR)/../Release-iphonesimulator";
 				ONLY_ACTIVE_ARCH = NO;
@@ -3158,6 +3146,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ringly/Ringly-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Experimental;
@@ -3178,10 +3167,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../Carthage/Build/iOS",
-				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3196,7 +3181,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Ringly/Ringly-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ringly.app/Ringly";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Ringly";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Experimental;
@@ -3225,7 +3209,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = P97VTTKZ62;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "FUTURE=1";
@@ -3235,7 +3218,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -3247,7 +3230,6 @@
 		4337129B1BB1D31300738150 /* Nightly */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ringly/Ringly.entitlements;
@@ -3256,19 +3238,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P97VTTKZ62;
+				DEVELOPMENT_TEAM = 6X7HE53YM4;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(BUILT_PRODUCTS_DIR)/../Release-$(PLATFORM_NAME)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ringly/Ringly-Prefix.pch";
 				INFOPLIST_FILE = "Ringly/Ringly-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "$(BUILT_PRODUCTS_DIR)/../Release-iphoneos";
 				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(BUILT_PRODUCTS_DIR)/../Release-iphonesimulator";
 				ONLY_ACTIVE_ARCH = NO;
@@ -3279,6 +3255,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ringly/Ringly-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Nightly;
@@ -3299,10 +3276,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../Carthage/Build/iOS",
-				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3317,7 +3290,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Ringly/Ringly-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ringly.app/Ringly";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Ringly";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Nightly;
@@ -3336,10 +3308,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../Carthage/Build/iOS",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -3359,7 +3327,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ringly.app/Ringly";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Ringly";
 			};
 			name = Debug;
 		};
@@ -3379,10 +3346,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../Carthage/Build/iOS",
-				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3397,7 +3360,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Ringly/Ringly-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ringly.app/Ringly";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Ringly";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -3426,7 +3388,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = P97VTTKZ62;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "FUTURE=1";
@@ -3436,7 +3397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -3448,7 +3409,6 @@
 		43BEE65C1CC9200D003F245F /* Future */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ringly/Ringly.entitlements;
@@ -3457,19 +3417,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P97VTTKZ62;
+				DEVELOPMENT_TEAM = 6X7HE53YM4;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(BUILT_PRODUCTS_DIR)/../Release-$(PLATFORM_NAME)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ringly/Ringly-Prefix.pch";
 				INFOPLIST_FILE = "Ringly/Ringly-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "$(BUILT_PRODUCTS_DIR)/../Release-iphoneos";
 				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(BUILT_PRODUCTS_DIR)/../Release-iphonesimulator";
 				ONLY_ACTIVE_ARCH = NO;
@@ -3480,6 +3434,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ringly/Ringly-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Future;
@@ -3500,10 +3455,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../Carthage/Build/iOS",
-				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3518,7 +3469,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Ringly/Ringly-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ringly.app/Ringly";
-				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Ringly";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Future;
@@ -3547,7 +3497,6 @@
 				DEVELOPMENT_TEAM = P97VTTKZ62;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -3563,7 +3512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3594,7 +3543,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = P97VTTKZ62;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
@@ -3604,7 +3552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -3617,7 +3565,6 @@
 		61AF2F1F1734442D0044192F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ringly/Ringly.entitlements;
@@ -3625,17 +3572,12 @@
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P97VTTKZ62;
+				DEVELOPMENT_TEAM = 6X7HE53YM4;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ringly/Ringly-Prefix.pch";
 				INFOPLIST_FILE = "Ringly/Ringly-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ringly.$(PRODUCT_NAME:rfc1034identifier)${BUNDLE_IDENTIFIER_SUFFIX}";
 				PRODUCT_NAME = Ringly;
@@ -3644,6 +3586,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Ringly/Ringly-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3651,7 +3594,6 @@
 		61AF2F201734442D0044192F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -3660,18 +3602,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P97VTTKZ62;
+				DEVELOPMENT_TEAM = 6X7HE53YM4;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ringly/Ringly-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Ringly/Ringly-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ringly.$(PRODUCT_NAME:rfc1034identifier)${BUNDLE_IDENTIFIER_SUFFIX}";
@@ -3681,6 +3618,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Ringly/Ringly-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
