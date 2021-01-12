@@ -26,14 +26,12 @@
 		435E3CE51CB54E130046F3D7 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CE41CB54E130046F3D7 /* APIServer.swift */; };
 		435E3CE91CB54EE20046F3D7 /* LogFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CE81CB54EE20046F3D7 /* LogFunction.swift */; };
 		435E3CEF1CB54F9D0046F3D7 /* ResetToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CEE1CB54F9D0046F3D7 /* ResetToken.swift */; };
-		435E3CF11CB551510046F3D7 /* FirmwareResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CF01CB551510046F3D7 /* FirmwareResult.swift */; };
 		435E3CF51CB553C70046F3D7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CF41CB553C70046F3D7 /* APIService.swift */; };
 		435E3CF71CB553EF0046F3D7 /* NSError+HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CF61CB553EF0046F3D7 /* NSError+HTTPResponse.swift */; };
 		435E3CFB1CB555860046F3D7 /* AppEventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CFA1CB555860046F3D7 /* AppEventsRequest.swift */; };
 		435E3D011CB564FD0046F3D7 /* AuthenticationRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3D001CB564FD0046F3D7 /* AuthenticationRequests.swift */; };
 		435E3D031CB565380046F3D7 /* PasswordResetRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3D021CB565380046F3D7 /* PasswordResetRequests.swift */; };
 		435E3D051CB565B00046F3D7 /* PeripheralRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3D041CB565B00046F3D7 /* PeripheralRegistrationRequest.swift */; };
-		435E3D071CB565F60046F3D7 /* FirmwareRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3D061CB565F50046F3D7 /* FirmwareRequest.swift */; };
 		435E3D091CB566390046F3D7 /* AddedHTTPHeadersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3D081CB566390046F3D7 /* AddedHTTPHeadersRequest.swift */; };
 		435E7EAC1E3FD7F900856D4E /* DiagnosticDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E7EAB1E3FD7F900856D4E /* DiagnosticDataRequest.swift */; };
 		435E7EAE1E3FF04000856D4E /* Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E7EAD1E3FF04000856D4E /* Multipart.swift */; };
@@ -100,14 +98,12 @@
 		435E3CE41CB54E130046F3D7 /* APIServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
 		435E3CE81CB54EE20046F3D7 /* LogFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFunction.swift; sourceTree = "<group>"; };
 		435E3CEE1CB54F9D0046F3D7 /* ResetToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetToken.swift; sourceTree = "<group>"; };
-		435E3CF01CB551510046F3D7 /* FirmwareResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirmwareResult.swift; sourceTree = "<group>"; };
 		435E3CF41CB553C70046F3D7 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		435E3CF61CB553EF0046F3D7 /* NSError+HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+HTTPResponse.swift"; sourceTree = "<group>"; };
 		435E3CFA1CB555860046F3D7 /* AppEventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEventsRequest.swift; sourceTree = "<group>"; };
 		435E3D001CB564FD0046F3D7 /* AuthenticationRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRequests.swift; sourceTree = "<group>"; };
 		435E3D021CB565380046F3D7 /* PasswordResetRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetRequests.swift; sourceTree = "<group>"; };
 		435E3D041CB565B00046F3D7 /* PeripheralRegistrationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralRegistrationRequest.swift; sourceTree = "<group>"; };
-		435E3D061CB565F50046F3D7 /* FirmwareRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirmwareRequest.swift; sourceTree = "<group>"; };
 		435E3D081CB566390046F3D7 /* AddedHTTPHeadersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedHTTPHeadersRequest.swift; sourceTree = "<group>"; };
 		435E7EAB1E3FD7F900856D4E /* DiagnosticDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticDataRequest.swift; sourceTree = "<group>"; };
 		435E7EAD1E3FF04000856D4E /* Multipart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multipart.swift; sourceTree = "<group>"; };
@@ -209,7 +205,6 @@
 				435E3CFA1CB555860046F3D7 /* AppEventsRequest.swift */,
 				435E3D001CB564FD0046F3D7 /* AuthenticationRequests.swift */,
 				435E7EAB1E3FD7F900856D4E /* DiagnosticDataRequest.swift */,
-				435E3D061CB565F50046F3D7 /* FirmwareRequest.swift */,
 				435E3D021CB565380046F3D7 /* PasswordResetRequests.swift */,
 				435E3D041CB565B00046F3D7 /* PeripheralRegistrationRequest.swift */,
 				435E3CD81CB54CA70046F3D7 /* RESTRequests.swift */,
@@ -233,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				435E3CE01CB54DF60046F3D7 /* Authentication.swift */,
-				435E3CF01CB551510046F3D7 /* FirmwareResult.swift */,
 				435E3CEE1CB54F9D0046F3D7 /* ResetToken.swift */,
 				435E3CE11CB54DF60046F3D7 /* User.swift */,
 				D76201D71EC4DF3C00522347 /* GuidedMeditationResult.swift */,
@@ -414,10 +408,8 @@
 				4339E1B91DE6004C00D57249 /* NSData+Godzippa.m in Sources */,
 				433F619C1DFF249700DD480F /* Coding.swift in Sources */,
 				435E3D051CB565B00046F3D7 /* PeripheralRegistrationRequest.swift in Sources */,
-				435E3D071CB565F60046F3D7 /* FirmwareRequest.swift in Sources */,
 				D76201D61EC4DE4600522347 /* GuidedMeditationsRequest.swift in Sources */,
 				435E3CF71CB553EF0046F3D7 /* NSError+HTTPResponse.swift in Sources */,
-				435E3CF11CB551510046F3D7 /* FirmwareResult.swift in Sources */,
 				435E3CE91CB54EE20046F3D7 /* LogFunction.swift in Sources */,
 				439C09391E42C200005C8D43 /* Request.swift in Sources */,
 				435E3D011CB564FD0046F3D7 /* AuthenticationRequests.swift in Sources */,

@@ -43,11 +43,6 @@ extension URLRequest
     /// fails.
     func gzippedIfPossible() -> URLRequest
     {
-        return httpBody.flatMap({ try? ($0 as NSData).byGZipCompressing() }).map({ gzipped in
-            var mutable = self
-            mutable.setValue("gzip", forHTTPHeaderField: "Content-Encoding")
-            mutable.httpBody = gzipped
-            return mutable
-        }) ?? self
+        return self
     }
 }
