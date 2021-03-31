@@ -8,14 +8,13 @@
 
 import Foundation
 import ReactiveSwift
-import AudioPlayer
+//import AudioPlayer
 
 class GuidedAudioPlayerControlView: UIView {
     fileprivate let playButton = UIButton.newAutoLayout()
     fileprivate let pauseButton = UIButton.newAutoLayout()
     
     let playing = MutableProperty(false)
-    let player: AudioPlayer
     let guidedAudioModel: MindfulnessExerciseModel
     
     

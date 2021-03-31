@@ -34,7 +34,7 @@ final class PeripheralsViewController: ServicesViewController
     // MARK: - Page Indicator
 
     /// The page indicator displayed over `pages`.
-    fileprivate let pageIndicator = PageIndicator.newAutoLayout()
+   // fileprivate let pageIndicator = PageIndicator.newAutoLayout()
 
     // MARK: - Navigation Bar
 

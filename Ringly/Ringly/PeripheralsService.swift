@@ -2,7 +2,7 @@ import ReactiveSwift
 import ReactiveRinglyKit
 import Result
 import RinglyActivityTracking
-import RinglyDFU
+//import RinglyDFU
 import RinglyExtensions
 import RinglyKit
 

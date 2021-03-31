@@ -424,28 +424,6 @@ protocol BatteryServiceStateSource
 // MARK: - Preferences Integration
 extension Preferences: BatteryServiceStateSource {}
 
-// MARK: - Local Notification Extensions
-extension LocalNotification
-{
-    /// `true` if the notification is a low battery notification.
-    @nonobjc var isLowBattery: Bool
-    {
-        return userInfo?[LowBatteryKey] as? Bool ?? false
-    }
-    
-    /// `true` if the notification is a full battery notification.
-    @nonobjc var isFullBattery: Bool
-    {
-        return userInfo?[FullBatteryKey] as? Bool ?? false
-    }
- 
-    /// `true` if the notification is a charge ringly notification.
-    func isChargeRingly(_ chargeNotification: ChargeNotification) -> Bool
-    {
-        return userInfo?[ChargeRinglyKey] as? Bool ?? false
-    }
-}
-
 extension UILocalNotification
 {
     /**
@@ -507,7 +485,6 @@ extension LocalNotificationScheduling
     
     func cancelChargeNotifications(_ chargeNotification: ChargeNotification)
     {
-        cancelNotifications(matching: { $0.isChargeRingly(chargeNotification) })
     }
 }
 

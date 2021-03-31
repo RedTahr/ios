@@ -168,12 +168,3 @@ extension UILocalNotification
         }
     }
 }
-
-extension LocalNotification
-{
-    func isEngagementNotification(_ engagementNotification: EngagementNotification) -> Bool
-    {
-        return userInfo?[engagementNotification.userInfoKey] as? Bool ?? false
-    }
-}
-

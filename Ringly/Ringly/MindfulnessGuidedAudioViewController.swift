@@ -10,7 +10,7 @@ import UIKit
 import HealthKit
 import ReactiveSwift
 import Result
-import AudioPlayer
+//import AudioPlayer
 import MediaPlayer
 import RinglyActivityTracking
 
@@ -19,7 +19,7 @@ typealias AudioProgress = (time: TimeInterval, percentagePlayed: CGFloat)
 
 protocol GestureAvoidable {}
 
-class MindfulnessGuidedAudioViewController: ServicesViewController, UIGestureRecognizerDelegate, AudioPlayerDelegate {
+class MindfulnessGuidedAudioViewController: ServicesViewController, UIGestureRecognizerDelegate {
 
     fileprivate let background = GradientView.mindfulnessGradientView
     fileprivate let tap = UITapGestureRecognizer()

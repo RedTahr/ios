@@ -17,7 +17,7 @@ extension Reactive where Base: RLYPeripheral
                             applicationsProducer: SignalProducer<[ApplicationConfiguration], NoError>,
                             contactsProducer: SignalProducer<[ContactConfiguration], NoError>,
                             innerRingProducer: SignalProducer<Bool, NoError>,
-                            analyticsService: AnalyticsService)
+                            _: NSNull )
         -> SignalProducer<(), NoError>
     {
         return activatedProducer.producer.combineLatest(with: ANCSNotificationMode)
@@ -29,16 +29,14 @@ extension Reactive where Base: RLYPeripheral
                 case .automatic:
                     return self.writeANCSV2Configurations(
                             applicationsProducer: applicationsProducer,
-                            contactsProducer: contactsProducer,
-                            analyticsService: analyticsService
+                            contactsProducer: contactsProducer
                         )
                 case .phone:
                     return self.sendANCSV1Notifications(
                             applicationsProducer: applicationsProducer,
                             contactsProducer: contactsProducer,
                             innerRingProducer: innerRingProducer,
-                            signatureCache: RLYPeripheral.sharedSignatureCache,
-                            analyticsService: analyticsService
+                            signatureCache: RLYPeripheral.sharedSignatureCache
                         )
                 case .unknown:
                     return SignalProducer.empty

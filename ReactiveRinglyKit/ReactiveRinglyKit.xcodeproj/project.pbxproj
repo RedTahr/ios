@@ -17,7 +17,6 @@
 		4321D5AA1BAB0590000C4A68 /* NSObject+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321D5A91BAB0590000C4A68 /* NSObject+Reactive.swift */; };
 		4321D5B41BAB69D2000C4A68 /* RLYCentral+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321D5B31BAB69D2000C4A68 /* RLYCentral+Properties.swift */; };
 		433F2FEA1CDBDCB5006EDC39 /* RLYPeripheralActivityTracking+SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433F2FE91CDBDCB5006EDC39 /* RLYPeripheralActivityTracking+SignalProducer.swift */; };
-		435CF8171E01E71A004E5352 /* SignalProducerDataAccumulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CF8161E01E71A004E5352 /* SignalProducerDataAccumulationTests.swift */; };
 		435CF81A1E01E79B004E5352 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 435CF8181E01E792004E5352 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43A0947B1C5FFD6900159B70 /* RLYPeripheralANCSNotificationModeInformation+SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A0947A1C5FFD6900159B70 /* RLYPeripheralANCSNotificationModeInformation+SignalProducer.swift */; };
 		43A0947D1C5FFDF700159B70 /* RLYPeripheralBatteryInformation+SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A0947C1C5FFDF700159B70 /* RLYPeripheralBatteryInformation+SignalProducer.swift */; };
@@ -66,7 +65,6 @@
 		4321D57C1BAA1CDB000C4A68 /* ReactiveRinglyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveRinglyKit.h; sourceTree = "<group>"; };
 		4321D57E1BAA1CDB000C4A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4321D5831BAA1CDB000C4A68 /* ReactiveRinglyKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveRinglyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4321D58A1BAA1CDB000C4A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4321D5961BAA1D01000C4A68 /* RinglyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RinglyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4321D59B1BAA1DA3000C4A68 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4321D59C1BAA1DA3000C4A68 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 		4321D5A91BAB0590000C4A68 /* NSObject+Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Reactive.swift"; sourceTree = "<group>"; };
 		4321D5B31BAB69D2000C4A68 /* RLYCentral+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLYCentral+Properties.swift"; sourceTree = "<group>"; };
 		433F2FE91CDBDCB5006EDC39 /* RLYPeripheralActivityTracking+SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLYPeripheralActivityTracking+SignalProducer.swift"; sourceTree = "<group>"; };
-		435CF8161E01E71A004E5352 /* SignalProducerDataAccumulationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerDataAccumulationTests.swift; sourceTree = "<group>"; };
 		435CF8181E01E792004E5352 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		43A0947A1C5FFD6900159B70 /* RLYPeripheralANCSNotificationModeInformation+SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLYPeripheralANCSNotificationModeInformation+SignalProducer.swift"; sourceTree = "<group>"; };
 		43A0947C1C5FFDF700159B70 /* RLYPeripheralBatteryInformation+SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLYPeripheralBatteryInformation+SignalProducer.swift"; sourceTree = "<group>"; };
@@ -116,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				4321D57B1BAA1CDB000C4A68 /* ReactiveRinglyKit */,
-				4321D5871BAA1CDB000C4A68 /* ReactiveRinglyKitTests */,
 				4321D57A1BAA1CDB000C4A68 /* Products */,
 				4321D59F1BAA1DB7000C4A68 /* Frameworks */,
 			);
@@ -141,15 +137,6 @@
 				4321D57E1BAA1CDB000C4A68 /* Info.plist */,
 			);
 			path = ReactiveRinglyKit;
-			sourceTree = "<group>";
-		};
-		4321D5871BAA1CDB000C4A68 /* ReactiveRinglyKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				435CF8161E01E71A004E5352 /* SignalProducerDataAccumulationTests.swift */,
-				4321D58A1BAA1CDB000C4A68 /* Info.plist */,
-			);
-			path = ReactiveRinglyKitTests;
 			sourceTree = "<group>";
 		};
 		4321D59F1BAA1DB7000C4A68 /* Frameworks */ = {
@@ -322,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435CF8171E01E71A004E5352 /* SignalProducerDataAccumulationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

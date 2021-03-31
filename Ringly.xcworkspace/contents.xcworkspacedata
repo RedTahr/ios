@@ -19,7 +19,4 @@
    <FileRef
       location = "group:RinglyAPI/RinglyAPI.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:TestPeripheral/TestPeripheral.xcodeproj">
-   </FileRef>
 </Workspace>

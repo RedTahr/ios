@@ -1,44 +1,13 @@
 import AirshipKit
 import MessageUI
-import Mixpanel
+//import Mixpanel
 import RinglyActivityTracking
 import RinglyExtensions
 import ReactiveSwift
 import Result
 import RinglyAPI
-import RinglyDFU
+//import RinglyDFU
 import UIKit
-import Fabric
-import Crashlytics
-
-#if FUTURE
-    import HockeySDK
-
-    #if EXPERIMENTAL
-        private let hockeyAppToken = "YOUR-TOKEN-HERE"
-        private let hockeyAppSecret = "YOUR-SECRET-HERE"
-    #else
-        #if NIGHTLY
-            private let hockeyAppToken = "YOUR-TOKEN-HERE"
-            private let hockeyAppSecret = "YOUR-SECRET-HERE"
-        #else
-            private let hockeyAppToken = "YOUR-TOKEN-HERE"
-            private let hockeyAppSecret = "YOUR-SECRET-HERE"
-        #endif
-    #endif
-#endif
-
-#if DEBUG || FUTURE || FUTURE_RELEASE
-    private let airshipConfigDevelopmentAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigDevelopmentAppSecret = "YOUR-SECRET-HERE"
-    private let airshipConfigProductionAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigProductionAppSecret = "YOUR-SECRET-HERE"
-#else
-    private let airshipConfigDevelopmentAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigDevelopmentAppSecret = "YOUR-SECRET-HERE"
-    private let airshipConfigProductionAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigProductionAppSecret = "YOUR-SECRET-HERE"
-#endif
 
 final class AppDelegate: NSObject, UIApplicationDelegate
 {
@@ -66,13 +35,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
         guard NSClassFromString("XCTestCase") == nil else { return true }
 
         // mixpanel setup
-        let mixpanel = Mixpanel.sharedInstance(withToken: kAnalyticsMixpanelToken, launchOptions: launchOptions)
-        mixpanel.enableLogging = false // these logs are mostly useless and spam the console
-        mixpanel.timeEvent(kAnalyticsApplicationLaunched)
-
-        // crashlytics setup
-        Fabric.with([Crashlytics.self])
-
         // set up RLog
         RLogIgnoredTypes = .dfuNordic
         APILogFunction = SLogAPI
@@ -84,8 +46,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate
                 .API,
                 .appleNotifications,
                 .activityTracking,
-                .bluetooth,
-                .DFU
+                .bluetooth
             ]
         #endif
 

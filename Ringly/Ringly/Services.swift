@@ -4,9 +4,9 @@ import Result
 import RinglyActivityTracking
 import RinglyAPI
 
-import class Mixpanel.Mixpanel
-import class DFULibrary.Zip
-import class DFULibrary.ZipArchive
+//import class Mixpanel.Mixpanel
+//import class DFULibrary.Zip
+//import class DFULibrary.ZipArchive
 
 final class Services: NSObject
 {
@@ -19,9 +19,6 @@ final class Services: NSObject
         // API
         let api = APIService(authenticationStorage: preferences)
         self.api = api
-
-        // Analytics
-        analytics = AnalyticsService(APIService: api, mixpanel: Mixpanel.sharedInstance())
 
         // Applications
         let supportedApps = SupportedApplication.all
@@ -109,20 +106,13 @@ final class Services: NSObject
             centralManagerRestoreIdentifier: "ringlyCentralManagerIdentifier",
             savedPeripherals: preferences.savedPeripherals.value,
             activatedIdentifier: preferences.activatedPeripheralIdentifier.value,
-            analyticsService: analytics,
+            _: NSNull,
             applicationsService: applications,
             contactsService: contacts,
             activityTrackingService: activityTracking,
             preferences: preferences
         )
 
-        analytics.setSuperProperties(producer: SuperPropertySetting.producer(
-            activity: activityTracking,
-            applications: applications,
-            contacts: contacts,
-            peripherals: peripherals,
-            preferences: preferences
-        ))
 
         preferences.savedPeripherals <~ peripherals.savedPeripheralsProducer.skip(first: 1)
         preferences.activatedPeripheralIdentifier <~ peripherals.activatedIdentifier.signal
@@ -147,10 +137,6 @@ final class Services: NSObject
             preferences: preferences.engagement
         ).start()
 
-        // mindful notifications
-        mindfulNotifications = MindfulNotificationsService()
-        mindfulNotifications.reactive.scheduleMindfulNotifications(preferences: preferences)
-        
         // show reviews when appropriate
         preferences.reviewsState.transitionReviewsState()
 
@@ -166,9 +152,6 @@ final class Services: NSObject
 
     /// The applications service.
     let applications: ApplicationsService
-
-    /// The analytics service.
-    let analytics: AnalyticsService
 
     /// The API service.
     let api: APIService
@@ -287,11 +270,7 @@ extension Services
                 // the API requires that files be gzipped
                 do
                 {
-                    return MultipartFile(
-                        name: file.name,
-                        mime: file.mime,
-                        data: try (file.data as NSData).byGZipCompressing()
-                    )
+                    ""
                 }
                 catch let error as NSError
                 {
@@ -356,12 +335,7 @@ extension UserDefaults
 {
     @nonobjc fileprivate func defaultsFileURL() -> Result<URL, AnyError>
     {
-        return materialize {
-            let directory = try ZipArchive.createTemporaryFolderPath("ringly-diagnostic-userdefaults-\(arc4random())")
-            let file = URL(fileURLWithPath: directory).appendingPathComponent("userdefaults.plist")
-            (dictionaryRepresentation() as NSDictionary).write(to: file, atomically: true)
-            return file
-        }
+        return NSNull;
     }
 
     @nonobjc fileprivate func dataRepresentation() -> Result<Data, AnyError>

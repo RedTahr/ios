@@ -20,7 +20,7 @@ extension Reactive where Base: RLYPeripheral
          contactsProducer: SignalProducer<[ContactConfiguration], NoError>,
          innerRingProducer: SignalProducer<Bool, NoError>,
          signatureCache: MutableProperty<[String]>,
-         analyticsService: AnalyticsService)
+         _: NSNull)
         -> SignalProducer<(), NoError>
     {
         // observe and respond to the peripheral's notifications

@@ -296,7 +296,6 @@ final class ResetTokenRequestViewController: ServicesViewController
     override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
-        services.analytics.track(AnalyticsEvent.viewedScreen(name: .forgotPassword))
     }
 }
 

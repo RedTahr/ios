@@ -42,16 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "439DD5041AB0F8D500B73103"
-               BuildableName = "RinglyTests.xctest"
-               BlueprintName = "RinglyTests"
-               ReferencedContainer = "container:Ringly/Ringly.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

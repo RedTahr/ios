@@ -129,35 +129,7 @@ extension ApplicationConfiguration.LoadResult
             notification.alertTitle = tr(.applicationsNewSupportAlertTitle)
             notification.alertBody = tr(.applicationsNewSupportAlertBody(description))
             notification.fireDate = fireDate
-            notification.userInfo = UILocalNotification.userInfo(forNewApplications: installed)
             return notification
         })
-    }
-}
-
-extension LocalNotification
-{
-    /// A key for determining the behavior of `isForNewApplications`.
-    private static var forNewApplicationsKey: String { return "forNewApplications" }
-
-    /// A key containing the application identifiers of newly-added applications.
-    static var newApplicationIdentifiersKey: String { return "newApplicationIdentifiers" }
-
-    /// Creates a user-info dictionary for a new application support notification.
-    ///
-    /// - Parameter newApplications: The new applications to include in the notification.
-    fileprivate static func userInfo(forNewApplications newApplications: [SupportedApplication]) -> [String:Any]
-    {
-        return [
-            forNewApplicationsKey: true,
-            newApplicationIdentifiersKey: newApplications.map({ $0.identifiers })
-        ]
-    }
-
-    /// `true` if the notification was created by
-    /// `ApplicationConfiguration.LoadResult.localNotificationForNewApplicationsOnDevice`. Otherwise `false`.
-    var isForNewApplications: Bool
-    {
-        return userInfo?[Self.forNewApplicationsKey] as? Bool ?? false
     }
 }

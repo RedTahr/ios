@@ -1,4 +1,3 @@
-@import RinglyDFU;
 @import RinglyKit;
 #import <UIKit/UIKit.h>
 #import "Ringly-Swift.h"

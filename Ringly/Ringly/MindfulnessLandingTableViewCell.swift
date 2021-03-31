@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import PINRemoteImage
-import PINCache
+//import PINRemoteImage
+//import PINCache
 import RinglyExtensions
 
 

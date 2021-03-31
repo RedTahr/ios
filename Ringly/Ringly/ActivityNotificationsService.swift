@@ -99,11 +99,6 @@ final class ActivityNotificationsService: NSObject
                         SLogActivityTrackingError("Error in activity notifications, current day result: \(current.error)")
                     }
                 }
-                else {
-                    self?.localNotificationScheduler.scheduledLocalNotifications?
-                        .filter({ $0.isActivityNotification })
-                        .forEach((self?.localNotificationScheduler.cancelLocalNotification)!)
-                }
             })
     }
 
@@ -297,18 +292,6 @@ func ==(lhs: ActivityNotification, rhs: ActivityNotification) -> Bool
     }
 }
 
-extension LocalNotification
-{
-    @nonobjc var isActivityNotification: Bool
-    {
-        return userInfo?[activityNotificationKey] as? Bool ?? false
-    }
-
-    @nonobjc var isActivityReminderNotification: Bool
-    {
-        return userInfo?[activityReminderNotificationKey] as? Bool ?? false
-    }
-}
 
 private let activityNotificationKey = "activityNotification"
 private let activityReminderNotificationKey = "activityReminderNotification"

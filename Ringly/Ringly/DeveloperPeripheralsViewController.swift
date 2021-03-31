@@ -1,7 +1,7 @@
 #if DEBUG || FUTURE
 
 import ReactiveSwift
-import RinglyDFU
+//import RinglyDFU
 import UIKit
 
 final class DeveloperPeripheralsViewController: DeveloperTableViewController

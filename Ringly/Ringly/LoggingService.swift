@@ -3,7 +3,7 @@ import ReactiveSwift
 import RealmSwift
 import Result
 import RinglyActivityTracking
-import class DFULibrary.ZipArchive
+//import class DFULibrary.ZipArchive
 
 final class LoggingService: NSObject
 {
@@ -99,25 +99,8 @@ extension LoggingService
                 ) as NSError)
             }
 
-            do
-            {
-                let directory = try ZipArchive.createTemporaryFolderPath("ringly-diagnostics-\(arc4random())")
-
-                guard let fileURL = NSURL(fileURLWithPath: directory).appendingPathComponent("logs.csv") else {
-                    return .failure(MailComposeError(
-                        errorDescription: "Error",
-                        failureReason: "Error creating temporary path. Please contact support@ringly.com."
-                    ) as NSError)
-                }
-
-                try data.write(to: fileURL, options: .atomic)
-
-                return .success(fileURL)
-            }
-            catch let error as NSError
-            {
                 return .failure(error)
-            }
+            
         })
     }
 

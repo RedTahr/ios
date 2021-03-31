@@ -22,7 +22,7 @@ extension Reactive where Base: RLYPeripheral
     func writeANCSV2Configurations
         (applicationsProducer: SignalProducer<[ApplicationConfiguration], NoError>,
          contactsProducer: SignalProducer<[ContactConfiguration], NoError>,
-         analyticsService: AnalyticsService,
+         _: NSNull,
          debounceInterval: TimeInterval = 5,
          scheduler: DateSchedulerProtocol = QueueScheduler.main)
         -> SignalProducer<(), NoError>
@@ -53,27 +53,6 @@ extension Reactive where Base: RLYPeripheral
             .skipNil()
             .flatMap(.latest, transform: { snapshot, peripheral in
                 peripheral.ensureMatches(configurationSnapshot: snapshot)
-            })
-
-        // write analytics event when notifications are received
-        let analyticsProducer = applicationsProducer.sample(with: ANCSV2NotificationsProducer())
-            .map({ configurations, notification in
-                unwrap(
-                    configurations.configurationMatching(applicationIdentifier: notification.applicationIdentifier),
-                    notification
-                )
-            })
-            .skipNil()
-            .on(value: { configuration, notification in
-                analyticsService.track(NotifiedEvent(
-                    applicationIdentifier: notification.applicationIdentifier,
-                    sent: true,
-                    enabled: true,
-                    supported: true,
-                    version: notification.version
-                ))
-
-                analyticsService.trackNotifiedEventWithLabel(configuration.application.analyticsName)
             })
 
         return SignalProducer.merge(

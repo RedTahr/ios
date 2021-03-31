@@ -301,6 +301,8 @@
 	<string>Combine Ringly data with Health and other Health-enabled trackers inside the Ringly app.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Back up your Ringly activity data to Health and optionally use the data with other Health-enabled apps.</string>
+	<key>NSMainNibFile</key>
+	<string>LaunchScreen</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Access photos to manage your profile picture and selfies.</string>
 	<key>UIAppFonts</key>
@@ -347,7 +349,6 @@
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>audio</string>
 		<string>bluetooth-central</string>
 		<string>fetch</string>
 	</array>

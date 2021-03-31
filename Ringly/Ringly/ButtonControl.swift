@@ -3,7 +3,7 @@ import RinglyExtensions
 import UIKit
 
 /// A standard button for the app - a border, with capitalized kerned text in the center.
-final class ButtonControl: UIControl, GestureAvoidable
+final class ButtonControl: UIControl
 {
     fileprivate let controlMaskView = ButtonControlMaskView(frame: .zero)
 

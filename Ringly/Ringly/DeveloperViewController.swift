@@ -8,7 +8,7 @@ import Result
 import RinglyAPI
 import RinglyActivityTracking
 import RinglyExtensions
-import Crashlytics
+//import Crashlytics
 
 final class DeveloperViewController: ServicesViewController
 {
@@ -417,23 +417,23 @@ extension DeveloperViewController
 
     @objc fileprivate func DFUAction()
     {
-        selectPeripheral { peripheral in
-            let builder = DFUPackageBuilderViewController(services: self.services)
-            builder.peripheral.value = peripheral
+        // selectPeripheral { peripheral in
+        //     let builder = DFUPackageBuilderViewController(services: self.services)
+        //     builder.peripheral.value = peripheral
 
-            let navigation = UINavigationController(rootViewController: builder)
+        //     let navigation = UINavigationController(rootViewController: builder)
 
-            builder.completed = { [weak self, weak navigation] _, result in
-                navigation?.dismiss(animated: true, completion: nil)
-                self?.presentDFU(peripheral: peripheral, firmwareResult: result)
-            }
+        //     builder.completed = { [weak self, weak navigation] _, result in
+        //         navigation?.dismiss(animated: true, completion: nil)
+        //         self?.presentDFU(peripheral: peripheral, firmwareResult: result)
+        //     }
 
-            builder.cancelled = { [weak navigation] _ in
-                navigation?.dismiss(animated: true, completion: nil)
-            }
+        //     builder.cancelled = { [weak navigation] _ in
+        //         navigation?.dismiss(animated: true, completion: nil)
+        //     }
 
-            self.present(navigation, animated: true, completion: nil)
-        }
+        //     self.present(navigation, animated: true, completion: nil)
+        // }
     }
 
     @objc fileprivate func peripheralNameAction()
@@ -864,7 +864,6 @@ extension DeveloperViewController
     }
     
     @objc fileprivate func simulateCrash() {
-        Crashlytics.sharedInstance().crash()
     }
     
     @objc fileprivate func manualSync() {

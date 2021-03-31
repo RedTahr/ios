@@ -1,5 +1,5 @@
 import Foundation
-import DFULibrary
+//import DFULibrary
 
 enum AnalyticsDFUEvent
 {
@@ -99,25 +99,5 @@ extension AnalyticsDFUWriteEvent: AnalyticsEventType
             kAnalyticsPropertyPackageType: packageType,
             kAnalyticsPropertyPackageVersion: packageVersion,
         ]
-    }
-}
-
-extension DFUFirmwareType: AnalyticsPropertyValueType
-{
-    var analyticsString: String
-    {
-        switch self
-        {
-        case .application:
-            return "application"
-        case .bootloader:
-            return "bootloader"
-        case .softdevice:
-            return "softdevice"
-        case .softdeviceBootloader:
-            return "softdevicebootloader"
-        case .softdeviceBootloaderApplication:
-            return "softdevicebootloaderapplication"
-        }
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		430210631D3FCE4200C18699 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430210621D3FCE4200C18699 /* Steps.swift */; };
 		430210651D3FCEAF00C18699 /* SourcedStepsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430210641D3FCEAF00C18699 /* SourcedStepsDataSource.swift */; };
-		431211D71E55FE7100298970 /* Version3.realm in Resources */ = {isa = PBXBuildFile; fileRef = 431211D61E55FE7100298970 /* Version3.realm */; };
 		4331DEBD1CE3AAD600A5ABAD /* UpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4331DEBC1CE3AAD600A5ABAD /* UpdateModel.swift */; };
 		4331DEBF1CE3AC2E00A5ABAD /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4331DEBE1CE3AC2E00A5ABAD /* RealmService.swift */; };
 		4331DEC21CE3BCB900A5ABAD /* SourcedUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4331DEC11CE3BCB900A5ABAD /* SourcedUpdate.swift */; };
@@ -21,9 +20,7 @@
 		4369C0AF1D0745EA00C85787 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4331DEB31CE3A9C900A5ABAD /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4369C0B01D0745EA00C85787 /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4331DEB41CE3A9C900A5ABAD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4369C0BF1D08ADA000C85787 /* NSCalendar+ActivityTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369C0BE1D08ADA000C85787 /* NSCalendar+ActivityTracking.swift */; };
-		4369C0C21D08AF8700C85787 /* NSCalendarBoundaryDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369C0C01D08AF7C00C85787 /* NSCalendarBoundaryDateTests.swift */; };
 		436CA0081D09EEF000CD7E51 /* SequenceType+SourcedUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CA0071D09EEF000CD7E51 /* SequenceType+SourcedUpdate.swift */; };
-		436CA00B1D09F01300CD7E51 /* SequenceTypeSourcedUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CA0091D09F00A00CD7E51 /* SequenceTypeSourcedUpdateTests.swift */; };
 		436CA00D1D09F29300CD7E51 /* HealthKitSaveSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CA00C1D09F29300CD7E51 /* HealthKitSaveSink.swift */; };
 		436CA00F1D0A048100CD7E51 /* HealthKitQueuedUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CA00E1D0A048100CD7E51 /* HealthKitQueuedUpdateModel.swift */; };
 		436CA0121D0A0F3D00CD7E51 /* HealthKitQueuedUpdatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CA0111D0A0F3D00CD7E51 /* HealthKitQueuedUpdatesDataSource.swift */; };
@@ -42,7 +39,6 @@
 		43A0C7DC1CD3BBD500BD763C /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43A0C7D11CD3BBBC00BD763C /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43A0C7DD1CD3BBD600BD763C /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43A0C7D21CD3BBBC00BD763C /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43A0C7DF1CD3BC6800BD763C /* RinglyExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43A0C7CD1CD3BAE300BD763C /* RinglyExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		43A3C71C1DAECDF700255AD3 /* CalendarBoundaryDatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A3C71B1DAECDF700255AD3 /* CalendarBoundaryDatesTests.swift */; };
 		43AC36A21E0AEB2600AB0049 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43AC36A11E0AEB1C00AB0049 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43AC36A31E0AEB4400AB0049 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A0C7D11CD3BBBC00BD763C /* ReactiveCocoa.framework */; };
 		43AC36A41E0AEB4400AB0049 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AC36A11E0AEB1C00AB0049 /* ReactiveSwift.framework */; };
@@ -53,10 +49,7 @@
 		43D24B981D41564A0070207A /* CalendarBoundaryDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D24B971D41564A0070207A /* CalendarBoundaryDates.swift */; };
 		43D7FCA61CE12E920017FA0D /* ActivityTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7FCA41CE12E920017FA0D /* ActivityTrackingService.swift */; };
 		43D7FCA71CE12E920017FA0D /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7FCA51CE12E920017FA0D /* HealthKitService.swift */; };
-		43DD20DA1E535C2F00789CA0 /* RealmMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD20D81E535C2600789CA0 /* RealmMigrationTests.swift */; };
 		43DD20DD1E5360EB00789CA0 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43DD20DB1E5360E900789CA0 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		43DD20E11E53895700789CA0 /* Version2.realm in Resources */ = {isa = PBXBuildFile; fileRef = 43DD20E01E53895700789CA0 /* Version2.realm */; };
-		43DD20E61E538EC900789CA0 /* StepsMergingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD20E41E538E1300789CA0 /* StepsMergingTests.swift */; };
 		43F21CF91CED0C3C0066CE40 /* BoundaryDatesDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F21CF81CED0C3C0066CE40 /* BoundaryDatesDataController.swift */; };
 		50F0E6551F1E60A600C210E3 /* MindfulDatesDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F0E6541F1E60A600C210E3 /* MindfulDatesDataController.swift */; };
 		D7771EB61ECA55A0006788A2 /* MindfulMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7771EB51ECA55A0006788A2 /* MindfulMinute.swift */; };
@@ -95,7 +88,6 @@
 /* Begin PBXFileReference section */
 		430210621D3FCE4200C18699 /* Steps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
 		430210641D3FCEAF00C18699 /* SourcedStepsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcedStepsDataSource.swift; sourceTree = "<group>"; };
-		431211D61E55FE7100298970 /* Version3.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Version3.realm; sourceTree = "<group>"; };
 		4331DEB31CE3A9C900A5ABAD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		4331DEB41CE3A9C900A5ABAD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		4331DEBC1CE3AAD600A5ABAD /* UpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateModel.swift; path = RinglyActivityTracking/UpdateModel.swift; sourceTree = "<group>"; };
@@ -107,9 +99,7 @@
 		4357FF241DB6840900EEC364 /* ProducerQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProducerQueue.swift; sourceTree = "<group>"; };
 		4369C0AD1D0744E600C85787 /* BoundaryDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundaryDates.swift; sourceTree = "<group>"; };
 		4369C0BE1D08ADA000C85787 /* NSCalendar+ActivityTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+ActivityTracking.swift"; sourceTree = "<group>"; };
-		4369C0C01D08AF7C00C85787 /* NSCalendarBoundaryDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendarBoundaryDateTests.swift; sourceTree = "<group>"; };
 		436CA0071D09EEF000CD7E51 /* SequenceType+SourcedUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+SourcedUpdate.swift"; sourceTree = "<group>"; };
-		436CA0091D09F00A00CD7E51 /* SequenceTypeSourcedUpdateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeSourcedUpdateTests.swift; sourceTree = "<group>"; };
 		436CA00C1D09F29300CD7E51 /* HealthKitSaveSink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitSaveSink.swift; sourceTree = "<group>"; };
 		436CA00E1D0A048100CD7E51 /* HealthKitQueuedUpdateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitQueuedUpdateModel.swift; path = RinglyActivityTracking/HealthKitQueuedUpdateModel.swift; sourceTree = "<group>"; };
 		436CA0111D0A0F3D00CD7E51 /* HealthKitQueuedUpdatesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitQueuedUpdatesDataSource.swift; sourceTree = "<group>"; };
@@ -121,7 +111,6 @@
 		43A0C79A1CD3B96F00BD763C /* RinglyActivityTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RinglyActivityTracking.h; sourceTree = "<group>"; };
 		43A0C79C1CD3B96F00BD763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A0C7A11CD3B96F00BD763C /* RinglyActivityTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinglyActivityTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43A0C7A81CD3B96F00BD763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A0C7B81CD3B9CA00BD763C /* StepsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsDataSource.swift; sourceTree = "<group>"; };
 		43A0C7B91CD3B9CA00BD763C /* HealthKitAuthorizationSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAuthorizationSource.swift; sourceTree = "<group>"; };
 		43A0C7BA1CD3B9CA00BD763C /* HealthKitQuerySource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitQuerySource.swift; sourceTree = "<group>"; };
@@ -129,15 +118,11 @@
 		43A0C7CD1CD3BAE300BD763C /* RinglyExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RinglyExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A0C7D11CD3BBBC00BD763C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		43A0C7D21CD3BBBC00BD763C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		43A3C71B1DAECDF700255AD3 /* CalendarBoundaryDatesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarBoundaryDatesTests.swift; sourceTree = "<group>"; };
 		43AC36A11E0AEB1C00AB0049 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = ../Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		43D24B971D41564A0070207A /* CalendarBoundaryDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarBoundaryDates.swift; sourceTree = "<group>"; };
 		43D7FCA41CE12E920017FA0D /* ActivityTrackingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTrackingService.swift; sourceTree = "<group>"; };
 		43D7FCA51CE12E920017FA0D /* HealthKitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
-		43DD20D81E535C2600789CA0 /* RealmMigrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMigrationTests.swift; sourceTree = "<group>"; };
 		43DD20DB1E5360E900789CA0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		43DD20E01E53895700789CA0 /* Version2.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Version2.realm; sourceTree = "<group>"; };
-		43DD20E41E538E1300789CA0 /* StepsMergingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsMergingTests.swift; sourceTree = "<group>"; };
 		43F21CF81CED0C3C0066CE40 /* BoundaryDatesDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundaryDatesDataController.swift; sourceTree = "<group>"; };
 		50F0E6541F1E60A600C210E3 /* MindfulDatesDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindfulDatesDataController.swift; sourceTree = "<group>"; };
 		D7771EB51ECA55A0006788A2 /* MindfulMinute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MindfulMinute.swift; path = RinglyActivityTracking/MindfulMinute.swift; sourceTree = "<group>"; };
@@ -209,7 +194,6 @@
 				43A0C7BF1CD3B9CE00BD763C /* Extensions */,
 				43A0C7B51CD3B9B700BD763C /* Services */,
 				43A0C7991CD3B96F00BD763C /* Supporting Files */,
-				43A0C7A51CD3B96F00BD763C /* Tests */,
 				43A0C7CF1CD3BAEB00BD763C /* Frameworks */,
 				43A0C7981CD3B96F00BD763C /* Products */,
 			);
@@ -232,22 +216,6 @@
 			);
 			name = "Supporting Files";
 			path = RinglyActivityTracking;
-			sourceTree = "<group>";
-		};
-		43A0C7A51CD3B96F00BD763C /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				43DD20E41E538E1300789CA0 /* StepsMergingTests.swift */,
-				43A3C71B1DAECDF700255AD3 /* CalendarBoundaryDatesTests.swift */,
-				4369C0C01D08AF7C00C85787 /* NSCalendarBoundaryDateTests.swift */,
-				436CA0091D09F00A00CD7E51 /* SequenceTypeSourcedUpdateTests.swift */,
-				43DD20D81E535C2600789CA0 /* RealmMigrationTests.swift */,
-				43A0C7A81CD3B96F00BD763C /* Info.plist */,
-				43DD20E01E53895700789CA0 /* Version2.realm */,
-				431211D61E55FE7100298970 /* Version3.realm */,
-			);
-			name = Tests;
-			path = RinglyActivityTrackingTests;
 			sourceTree = "<group>";
 		};
 		43A0C7B51CD3B9B700BD763C /* Services */ = {
@@ -429,8 +397,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431211D71E55FE7100298970 /* Version3.realm in Resources */,
-				43DD20E11E53895700789CA0 /* Version2.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,11 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DD20E61E538EC900789CA0 /* StepsMergingTests.swift in Sources */,
-				4369C0C21D08AF8700C85787 /* NSCalendarBoundaryDateTests.swift in Sources */,
-				436CA00B1D09F01300CD7E51 /* SequenceTypeSourcedUpdateTests.swift in Sources */,
-				43DD20DA1E535C2F00789CA0 /* RealmMigrationTests.swift in Sources */,
-				43A3C71C1DAECDF700255AD3 /* CalendarBoundaryDatesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
