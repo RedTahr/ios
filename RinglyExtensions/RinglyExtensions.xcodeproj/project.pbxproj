@@ -22,18 +22,12 @@
 		4317AFE81BBD92A300B63DE2 /* Sequence+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317AFE71BBD92A300B63DE2 /* Sequence+Ringly.swift */; };
 		4317AFEF1BBD9FEE00B63DE2 /* UITableView+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4317AFEE1BBD9FEE00B63DE2 /* UITableView+Ringly.swift */; };
 		4321D5C41BAB7069000C4A68 /* NSString+VersionNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4321D5C21BAB7069000C4A68 /* NSString+VersionNumbers.m */; };
-		4331DEC61CE3E24C00A5ABAD /* SignalProducerTimingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4331DEC51CE3E24C00A5ABAD /* SignalProducerTimingTestCase.swift */; };
-		4339E1C21DE793A700D57249 /* SignalProducerTimerUntilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4339E1C01DE7937D00D57249 /* SignalProducerTimerUntilTests.swift */; };
 		43448DBB1E4A36C400E21021 /* Observer+Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43448DBA1E4A36C400E21021 /* Observer+Completion.swift */; };
-		43448DC21E4A56D500E21021 /* SignalProducerImmediateTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43448DC01E4A559B00E21021 /* SignalProducerImmediateTimerTests.swift */; };
-		43448DC31E4A56F100E21021 /* SignalProducerBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43448DBC1E4A550100E21021 /* SignalProducerBufferTests.swift */; };
 		43448DD11E4A8DDD00E21021 /* SignalProducer+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43448DD01E4A8DDD00E21021 /* SignalProducer+Combine.swift */; };
-		43448DD31E4A8EA000E21021 /* SignalProducerCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43448DD21E4A8EA000E21021 /* SignalProducerCombineTests.swift */; };
 		4347D88C1C874F8400136BCC /* UIScreen+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347D88B1C874F8400136BCC /* UIScreen+Ringly.swift */; };
 		434896741DA67EFC000BD772 /* CGRect+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434896731DA67EFC000BD772 /* CGRect+Ringly.swift */; };
 		434E34021C3D9DA900E11E51 /* UIControl+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E34011C3D9DA900E11E51 /* UIControl+Ringly.swift */; };
 		4353991D1DA41810002260EE /* SignalProducer+Hold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353991C1DA41810002260EE /* SignalProducer+Hold.swift */; };
-		4353991F1DA41D4E002260EE /* SignalProducerHoldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353991E1DA41D4E002260EE /* SignalProducerHoldTests.swift */; };
 		435A2C5D1C2309EA00DB2858 /* UIView+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A2C5C1C2309EA00DB2858 /* UIView+Ringly.swift */; };
 		435A2C5F1C230C7800DB2858 /* NumberTypes+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A2C5E1C230C7800DB2858 /* NumberTypes+Ringly.swift */; };
 		435E3CFF1CB5575C0046F3D7 /* UIDevice+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CFE1CB5575C0046F3D7 /* UIDevice+Ringly.swift */; };
@@ -48,25 +42,19 @@
 		439E75FC1CC687360041F7D5 /* UIAlertController+SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E75FB1CC687360041F7D5 /* UIAlertController+SignalProducer.swift */; };
 		43A0C7CA1CD3BA6400BD763C /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A0C7C91CD3BA6400BD763C /* Either.swift */; };
 		43A409031C344A4D00BEE41F /* UIViewController+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A409021C344A4D00BEE41F /* UIViewController+Ringly.swift */; };
-		43AADC161BC6207700306855 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AADC151BC6207700306855 /* ArrayTests.swift */; };
 		43AC35A21E09FDED00AB0049 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AC35A11E09FDED00AB0049 /* ReactiveSwift.framework */; };
 		43AC35A31E09FDF800AB0049 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43AC35A11E09FDED00AB0049 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43AD7CE71BCC46F800099AB2 /* UICollectionView+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD7CE61BCC46F800099AB2 /* UICollectionView+Ringly.swift */; };
-		43AE13451DB53903005C01D5 /* SignalProducerErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AE13441DB53903005C01D5 /* SignalProducerErrorTests.swift */; };
 		43B0CC311BBDFEDE0003F4F0 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B0CC301BBDFEDE0003F4F0 /* Result.framework */; };
 		43B0CC341BBDFF3D0003F4F0 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43B0CC301BBDFEDE0003F4F0 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43B0CC351BBDFF3D0003F4F0 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 430F2D171BA8BE5800073E5A /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		43B0CC3B1BBE002E0003F4F0 /* NSArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B0CC3A1BBE002E0003F4F0 /* NSArrayTests.swift */; };
 		43B3155A1C5AA73A00377FD1 /* UIImageView+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B315591C5AA73A00377FD1 /* UIImageView+Ringly.swift */; };
-		43B826EB1DA72C5700B5DE38 /* SequenceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B826EA1DA72C5700B5DE38 /* SequenceTypeTests.swift */; };
 		43BCB97E1BBF15CD0002733F /* String+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCB97D1BBF15CD0002733F /* String+Ringly.swift */; };
-		43BDE5C31CE503EC005369A9 /* SignalProducerOptionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BDE5C11CE503CC005369A9 /* SignalProducerOptionalTests.swift */; };
 		43C21DD31CD3C4B100FA5547 /* SignalProducer+Replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C21DD21CD3C4B100FA5547 /* SignalProducer+Replace.swift */; };
 		43CD15661E4395CB001A6055 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD15651E4395CB001A6055 /* Tuple.swift */; };
 		43CF2ECB1D302C0E003E2473 /* UIEdgeInsets+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF2ECA1D302C0E003E2473 /* UIEdgeInsets+Ringly.swift */; };
 		43CFDA0E1E1EB5CE003FFDAE /* ReactiveRinglyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CFDA0C1E1EB5CE003FFDAE /* ReactiveRinglyKit.framework */; };
 		43CFDA0F1E1EB5CE003FFDAE /* RinglyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CFDA0D1E1EB5CE003FFDAE /* RinglyKit.framework */; };
-		43D24B961D41303E0070207A /* NSCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D24B951D41303E0070207A /* NSCalendarTests.swift */; };
 		43D75D6E1DEDD5E400F9FDA5 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43D75D6C1DEDD5D200F9FDA5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43D78E191C74D4E700C29ECF /* CGSize+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D78E181C74D4E700C29ECF /* CGSize+Ringly.swift */; };
 		43DB84161C89EDB9009B79C0 /* OptionalType+Ringly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB84151C89EDB9009B79C0 /* OptionalType+Ringly.swift */; };
@@ -78,7 +66,6 @@
 		43DDD9F41CB6BC5500A9C108 /* SignalProducer+Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDD9F31CB6BC5500A9C108 /* SignalProducer+Timing.swift */; };
 		43DDD9F61CB6BCB000A9C108 /* SignalProducer+Defer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDD9F51CB6BCB000A9C108 /* SignalProducer+Defer.swift */; };
 		43DDD9F81CB6BCEB00A9C108 /* SignalProducer+Ignore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDD9F71CB6BCEB00A9C108 /* SignalProducer+Ignore.swift */; };
-		43E26A3D1D2EFF5D00833EE6 /* DeviceScreenHeightSelectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E26A3B1D2EFF4D00833EE6 /* DeviceScreenHeightSelectTests.swift */; };
 		43E497F51DEDDB2C00434CD5 /* NSString+VersionNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4321D5C11BAB7069000C4A68 /* NSString+VersionNumbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43F21CFB1CED186A0066CE40 /* NSCalendar+SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F21CFA1CED186A0066CE40 /* NSCalendar+SignalProducer.swift */; };
 		43F21CFD1CED1ACF0066CE40 /* UIApplication+SignalProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F21CFC1CED1ACF0066CE40 /* UIApplication+SignalProducer.swift */; };
@@ -116,7 +103,6 @@
 		430F2CB81BA8B13100073E5A /* RinglyExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RinglyExtensions.h; sourceTree = "<group>"; };
 		430F2CBA1BA8B13100073E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430F2CBF1BA8B13100073E5A /* RinglyExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinglyExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		430F2CC61BA8B13100073E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430F2CD81BA8BE0900073E5A /* NSArray+Ringly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Ringly.h"; sourceTree = "<group>"; };
 		430F2CD91BA8BE0900073E5A /* NSArray+Ringly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Ringly.m"; sourceTree = "<group>"; };
 		430F2CDA1BA8BE0900073E5A /* NSDictionary+Ringly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Ringly.h"; sourceTree = "<group>"; };
@@ -131,18 +117,12 @@
 		4317AFEE1BBD9FEE00B63DE2 /* UITableView+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ringly.swift"; sourceTree = "<group>"; };
 		4321D5C11BAB7069000C4A68 /* NSString+VersionNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VersionNumbers.h"; sourceTree = "<group>"; };
 		4321D5C21BAB7069000C4A68 /* NSString+VersionNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VersionNumbers.m"; sourceTree = "<group>"; };
-		4331DEC51CE3E24C00A5ABAD /* SignalProducerTimingTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerTimingTestCase.swift; sourceTree = "<group>"; };
-		4339E1C01DE7937D00D57249 /* SignalProducerTimerUntilTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerTimerUntilTests.swift; sourceTree = "<group>"; };
 		43448DBA1E4A36C400E21021 /* Observer+Completion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observer+Completion.swift"; sourceTree = "<group>"; };
-		43448DBC1E4A550100E21021 /* SignalProducerBufferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerBufferTests.swift; sourceTree = "<group>"; };
-		43448DC01E4A559B00E21021 /* SignalProducerImmediateTimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerImmediateTimerTests.swift; sourceTree = "<group>"; };
 		43448DD01E4A8DDD00E21021 /* SignalProducer+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Combine.swift"; sourceTree = "<group>"; };
-		43448DD21E4A8EA000E21021 /* SignalProducerCombineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerCombineTests.swift; sourceTree = "<group>"; };
 		4347D88B1C874F8400136BCC /* UIScreen+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Ringly.swift"; sourceTree = "<group>"; };
 		434896731DA67EFC000BD772 /* CGRect+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Ringly.swift"; sourceTree = "<group>"; };
 		434E34011C3D9DA900E11E51 /* UIControl+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Ringly.swift"; sourceTree = "<group>"; };
 		4353991C1DA41810002260EE /* SignalProducer+Hold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Hold.swift"; sourceTree = "<group>"; };
-		4353991E1DA41D4E002260EE /* SignalProducerHoldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerHoldTests.swift; sourceTree = "<group>"; };
 		435A2C5C1C2309EA00DB2858 /* UIView+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ringly.swift"; sourceTree = "<group>"; };
 		435A2C5E1C230C7800DB2858 /* NumberTypes+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberTypes+Ringly.swift"; sourceTree = "<group>"; };
 		435E3CFE1CB5575C0046F3D7 /* UIDevice+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ringly.swift"; sourceTree = "<group>"; };
@@ -157,22 +137,16 @@
 		439E75FB1CC687360041F7D5 /* UIAlertController+SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+SignalProducer.swift"; sourceTree = "<group>"; };
 		43A0C7C91CD3BA6400BD763C /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		43A409021C344A4D00BEE41F /* UIViewController+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ringly.swift"; sourceTree = "<group>"; };
-		43AADC151BC6207700306855 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		43AC35A11E09FDED00AB0049 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = ../Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		43AD7CE61BCC46F800099AB2 /* UICollectionView+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ringly.swift"; sourceTree = "<group>"; };
-		43AE13441DB53903005C01D5 /* SignalProducerErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerErrorTests.swift; sourceTree = "<group>"; };
 		43B0CC301BBDFEDE0003F4F0 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		43B0CC3A1BBE002E0003F4F0 /* NSArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArrayTests.swift; sourceTree = "<group>"; };
 		43B315591C5AA73A00377FD1 /* UIImageView+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ringly.swift"; sourceTree = "<group>"; };
-		43B826EA1DA72C5700B5DE38 /* SequenceTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeTests.swift; sourceTree = "<group>"; };
 		43BCB97D1BBF15CD0002733F /* String+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ringly.swift"; sourceTree = "<group>"; };
-		43BDE5C11CE503CC005369A9 /* SignalProducerOptionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalProducerOptionalTests.swift; sourceTree = "<group>"; };
 		43C21DD21CD3C4B100FA5547 /* SignalProducer+Replace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Replace.swift"; sourceTree = "<group>"; };
 		43CD15651E4395CB001A6055 /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
 		43CF2ECA1D302C0E003E2473 /* UIEdgeInsets+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Ringly.swift"; sourceTree = "<group>"; };
 		43CFDA0C1E1EB5CE003FFDAE /* ReactiveRinglyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveRinglyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CFDA0D1E1EB5CE003FFDAE /* RinglyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RinglyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43D24B951D41303E0070207A /* NSCalendarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendarTests.swift; sourceTree = "<group>"; };
 		43D75D6C1DEDD5D200F9FDA5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		43D78E181C74D4E700C29ECF /* CGSize+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Ringly.swift"; sourceTree = "<group>"; };
 		43DB84151C89EDB9009B79C0 /* OptionalType+Ringly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionalType+Ringly.swift"; sourceTree = "<group>"; };
@@ -184,7 +158,6 @@
 		43DDD9F31CB6BC5500A9C108 /* SignalProducer+Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Timing.swift"; sourceTree = "<group>"; };
 		43DDD9F51CB6BCB000A9C108 /* SignalProducer+Defer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Defer.swift"; sourceTree = "<group>"; };
 		43DDD9F71CB6BCEB00A9C108 /* SignalProducer+Ignore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Ignore.swift"; sourceTree = "<group>"; };
-		43E26A3B1D2EFF4D00833EE6 /* DeviceScreenHeightSelectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceScreenHeightSelectTests.swift; sourceTree = "<group>"; };
 		43F21CFA1CED186A0066CE40 /* NSCalendar+SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+SignalProducer.swift"; sourceTree = "<group>"; };
 		43F21CFC1CED1ACF0066CE40 /* UIApplication+SignalProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+SignalProducer.swift"; sourceTree = "<group>"; };
 		43F953101DEF9AFE00D29038 /* NSParagraphStyle+With.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSParagraphStyle+With.swift"; sourceTree = "<group>"; };
@@ -244,25 +217,10 @@
 				43A4090B1C3B2B2800BEE41F /* Swift */,
 				43F21D021CEE455F0066CE40 /* Tuples */,
 				43A4090E1C3B2B4700BEE41F /* UIKit */,
-				430F2CC31BA8B13100073E5A /* RinglyExtensionsTests */,
 				430F2CBA1BA8B13100073E5A /* Info.plist */,
 			);
 			path = RinglyExtensions;
 			sourceTree = "<group>";
-		};
-		430F2CC31BA8B13100073E5A /* RinglyExtensionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				43AADC151BC6207700306855 /* ArrayTests.swift */,
-				43E26A3B1D2EFF4D00833EE6 /* DeviceScreenHeightSelectTests.swift */,
-				43B0CC3A1BBE002E0003F4F0 /* NSArrayTests.swift */,
-				43D24B951D41303E0070207A /* NSCalendarTests.swift */,
-				43448DBE1E4A550A00E21021 /* ReactiveSwift */,
-				430F2CC61BA8B13100073E5A /* Info.plist */,
-				43B826EA1DA72C5700B5DE38 /* SequenceTypeTests.swift */,
-			);
-			path = RinglyExtensionsTests;
-			sourceTree = SOURCE_ROOT;
 		};
 		430F2D1B1BA8BE7400073E5A /* Frameworks */ = {
 			isa = PBXGroup;
@@ -275,29 +233,6 @@
 				43B0CC301BBDFEDE0003F4F0 /* Result.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		43448DBE1E4A550A00E21021 /* ReactiveSwift */ = {
-			isa = PBXGroup;
-			children = (
-				43448DBF1E4A551400E21021 /* Timing */,
-				43448DD21E4A8EA000E21021 /* SignalProducerCombineTests.swift */,
-				43AE13441DB53903005C01D5 /* SignalProducerErrorTests.swift */,
-				4353991E1DA41D4E002260EE /* SignalProducerHoldTests.swift */,
-				43BDE5C11CE503CC005369A9 /* SignalProducerOptionalTests.swift */,
-			);
-			name = ReactiveSwift;
-			sourceTree = "<group>";
-		};
-		43448DBF1E4A551400E21021 /* Timing */ = {
-			isa = PBXGroup;
-			children = (
-				43448DBC1E4A550100E21021 /* SignalProducerBufferTests.swift */,
-				43448DC01E4A559B00E21021 /* SignalProducerImmediateTimerTests.swift */,
-				4339E1C01DE7937D00D57249 /* SignalProducerTimerUntilTests.swift */,
-				4331DEC51CE3E24C00A5ABAD /* SignalProducerTimingTestCase.swift */,
-			);
-			name = Timing;
 			sourceTree = "<group>";
 		};
 		43A4090A1C3B2B1C00BEE41F /* Foundation */ = {
@@ -578,19 +513,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43B826EB1DA72C5700B5DE38 /* SequenceTypeTests.swift in Sources */,
-				43E26A3D1D2EFF5D00833EE6 /* DeviceScreenHeightSelectTests.swift in Sources */,
-				43448DC21E4A56D500E21021 /* SignalProducerImmediateTimerTests.swift in Sources */,
-				43448DD31E4A8EA000E21021 /* SignalProducerCombineTests.swift in Sources */,
-				43AADC161BC6207700306855 /* ArrayTests.swift in Sources */,
-				43BDE5C31CE503EC005369A9 /* SignalProducerOptionalTests.swift in Sources */,
-				4353991F1DA41D4E002260EE /* SignalProducerHoldTests.swift in Sources */,
-				43B0CC3B1BBE002E0003F4F0 /* NSArrayTests.swift in Sources */,
-				4339E1C21DE793A700D57249 /* SignalProducerTimerUntilTests.swift in Sources */,
-				43D24B961D41303E0070207A /* NSCalendarTests.swift in Sources */,
-				43448DC31E4A56F100E21021 /* SignalProducerBufferTests.swift in Sources */,
-				43AE13451DB53903005C01D5 /* SignalProducerErrorTests.swift in Sources */,
-				4331DEC61CE3E24C00A5ABAD /* SignalProducerTimingTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

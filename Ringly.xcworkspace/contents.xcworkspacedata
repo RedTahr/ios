@@ -16,7 +16,4 @@
    <FileRef
       location = "group:RinglyExtensions/RinglyExtensions.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:RinglyAPI/RinglyAPI.xcodeproj">
-   </FileRef>
 </Workspace>

@@ -16,10 +16,6 @@ final class Services: NSObject
         let fm = FileManager.default
         preferences = Preferences.shared
 
-        // API
-        let api = APIService(authenticationStorage: preferences)
-        self.api = api
-
         // Applications
         let supportedApps = SupportedApplication.all
         applicationsPath = fm.rly_documentsFile(withName: ApplicationsService.applicationsFileName)
@@ -47,12 +43,6 @@ final class Services: NSObject
             logFunction: SLogNotifications
         ).start()
 
-        // prevent onboarding if more than four applications have been activated
-        if applications.activatedConfigurations.value.count > 4
-        {
-            preferences.onboardingShown.value = true
-        }
-
         // Contacts
         contactsPath = fm.rly_documentsFile(withName: ContactsService.contactsFilename)
         let contactConfigurations = ContactsService.contactConfigurations(from: contactsPath)
@@ -71,18 +61,8 @@ final class Services: NSObject
         // Logging
         logging = LoggingService.sharedLoggingService
         
-        // Caching
-        cache = CacheService(api: api)
-        
         // Notification Alerts
         notifications = NotificationAlertService.sharedNotificationService
-
-        // one-time migration of old saved peripherals
-        if let saved = preferences.savedPeripheral.value, preferences.savedPeripherals.value.count == 0
-        {
-            preferences.savedPeripherals.value = [saved]
-            preferences.activatedPeripheralIdentifier.value = saved.identifier
-        }
 
         preferences.savedPeripheral.value = nil
 
@@ -119,9 +99,6 @@ final class Services: NSObject
 
         activityTracking.realmService?.writeSourcedUpdatesProducer(peripherals.activityUpdatesProducer).start()
         
-        // updates
-        updates = UpdatesService(api: api, peripheralsService: peripherals)
-
         // peripheral registration
         peripheralRegistration = PeripheralRegistrationService(
             APIService: api,
@@ -165,23 +142,14 @@ final class Services: NSObject
     /// The logging service.
     let logging: LoggingService?
     
-    /// The mindfulness notifications service.
-    let mindfulNotifications: MindfulNotificationsService
-    
     /// The notification alerts service.
     let notifications: NotificationAlertService
-
-    /// The update service.
-    let updates: UpdatesService
 
     /// The keyboard service.
     let keyboard: KeyboardService
 
     /// The peripherals service.
     let peripherals: PeripheralsService
-    
-    // Cached Data service
-    let cache: CacheService
 
     /// The peripheral registration service.
     let peripheralRegistration: PeripheralRegistrationService

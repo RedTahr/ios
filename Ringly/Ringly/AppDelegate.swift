@@ -25,8 +25,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
     /// The root view controllers for
     fileprivate let container = ContainerViewController()
 
-    /// The shared delegate for Urban Airship classes.
-    fileprivate let urbanAirshipDelegate = UrbanAirshipDelegate()
 
     // MARK: - Launch
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?)
@@ -38,7 +36,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate
         // set up RLog
         RLogIgnoredTypes = .dfuNordic
         APILogFunction = SLogAPI
-        DFULogFunction = SLogDFU
+
         HKHealthStoreDebugLogFunction = SLogUI // temporary
 
         #if DEBUG
@@ -55,11 +53,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate
         // create the services object
         let services = Services()
         self.services = services
-
-        // prime cache
-        services.cache.cacheGuidedAudioSessions(completion: nil)
-
-
+        
         // log startup centrals
         if let centrals = launchOptions?[UIApplicationLaunchOptionsKey.bluetoothCentrals] as? [String]
         {
@@ -117,41 +111,9 @@ final class AppDelegate: NSObject, UIApplicationDelegate
             : SignalProducer.empty
 
         container.childViewController <~ readyForInterfaceProducer
-            .then(services.api.authenticated.producer.combineLatest(with: services.preferences.onboardingShown.producer))
-            .skipRepeats(==)
-            .map({ authenticated, shownOnboarding -> UIViewController in
-                // require authentication before showing main interface
-                guard authenticated else { return AuthenticationViewController(services: services) }
-
-                // show onboarding before showing main UI
-                if shownOnboarding
-                {
-                    return TabBarViewController(services: services)
-                }
-                else
-                {
-                    let onboarding = OnboardingViewController(services: services)
-                    onboarding.completionProducer.take(first: 1).startWithValues({ _ in
-                        services.preferences.onboardingShown.value = true
-                    })
-                    return onboarding
-                }
-            })
-
-            // when changing from onboarding to normal, show notifications view
-            .combinePrevious(nil)
             .on(value: { previous, current in
                 guard let tabs = current as? TabBarViewController else { return }
-
-                if previous is AuthenticationViewController
-                {
-                    tabs.defaultVia = .login
-                }
-                else if previous is OnboardingViewController
-                {
-                    tabs.defaultVia = .onboarding
-                }
-                else if previous == nil
+                    if previous == nil
                 {
                     tabs.defaultVia = .launch
                 }
@@ -162,42 +124,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
                 }
             })
             .map({ _, current in current })
-
-        // configure HockeyApp
-        #if FUTURE
-            let manager = BITHockeyManager.shared()
-            manager.configure(withIdentifier: hockeyAppToken)
-            manager.authenticator.authenticationSecret = hockeyAppSecret
-            manager.authenticator.identificationType = .hockeyAppEmail
-            manager.crashManager.crashManagerStatus = .autoSend
-            manager.start()
-            manager.authenticator.authenticateInstallation()
-        #endif
-
-        // configure urban airship
-        let airshipConfig = UAConfig()
-        airshipConfig.detectProvisioningMode = true
-        airshipConfig.developmentAppKey = airshipConfigDevelopmentAppKey
-        airshipConfig.developmentAppSecret = airshipConfigDevelopmentAppSecret
-        airshipConfig.productionAppKey = airshipConfigProductionAppKey
-        airshipConfig.productionAppSecret = airshipConfigProductionAppSecret
-
-        SLogGeneric("Airship config key is \(airshipConfig.appKey ?? "none")")
-
-        UAirship.takeOff(airshipConfig)
-        urbanAirshipDelegate.delegate = self
-        UAirship.push().pushNotificationDelegate = urbanAirshipDelegate
-        UAirship.push().registrationDelegate = urbanAirshipDelegate
-
-        services.api.authentication.producer.map({ $0.user?.identifier }).startWithValues({ identifier in
-            UAirship.namedUser().identifier = identifier
-        })
-
-        // backport local notification users to Urban Airship
-        if application.currentUserNotificationSettings.map({ !$0.types.isEmpty }) ?? false
-        {
-            UAirship.push().userPushNotificationsEnabled = true
-        }
 
         // protected data logging
         if application.isProtectedDataAvailable
@@ -422,115 +348,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
     }
 }
 
-extension AppDelegate: UrbanAirshipDelegateDelegate
-{
-    func receivedForegroundNotification(_ notification: UANotificationContent)
-    {
-        let application = UIApplication.shared
-        guard let window = self.window, application.applicationState == .active else { return }
-
-        func present(content: AlertViewControllerContent, actionGroup: AlertViewController.ActionGroup)
-        {
-            let alert = AlertViewController()
-            alert.content = content
-            alert.actionGroup = actionGroup
-            alert.present(above: window)
-        }
-
-        if notification.isLowBattery
-        {
-            present(
-                content: AlertImageTextContent(
-                    text: notification.alertTitle ?? tr(.lowBatteryNotificationText),
-                    detailText: notification.alertBody ?? tr(.lowBatteryNotificationDetailText("Ringly", 10))
-                ),
-                actionGroup: .close
-            )
-        }
-
-        if notification.isActivityNotification || notification.isActivityReminderNotification
-        {
-            present(
-                content: AlertImageTextContent(
-                    text: tr(.activity),
-                    detailText: notification.alertBody ?? ""
-                ),
-                actionGroup: AlertViewController.ActionGroup.actionOrClose(title: tr(.openActivity)) { [weak self] in
-                    if let tabs = self?.container.childViewController.value as? TabBarViewController
-                    {
-                        tabs.selectedTabBarItem = .activity
-                    }
-                }
-            )
-        }
-
-        if notification.isForNewApplications
-        {
-            present(
-                content: AlertImageTextContent(
-                    image: nil,
-                    text: notification.alertTitle ?? tr(.applicationsNewSupportAlertTitle),
-                    detailText: notification.alertBody ?? tr(.applicationsNewSupportAlertFallbackBody)
-                ),
-                actionGroup: AlertViewController.ActionGroup.actionOrClose(
-                    title: tr(.openAlerts),
-                    action: { [weak self] in
-                        if let tabs = self?.container.childViewController.value as? TabBarViewController
-                        {
-                            tabs.selectedTabBarItem = .notifications
-                        }
-                    }
-                )
-            )
-        }
-    }
-
-    func receivedBackgroundNotification(_ notificationContent: UANotificationContent)
-    {
-
-    }
-
-    func receivedNotificationResponse(_ response: UANotificationResponse)
-    {
-        guard response.actionIdentifier == UANotificationDefaultActionIdentifier else { return }
-
-        if let tabs = container.childViewController.value as? TabBarViewController
-        {
-            let content = response.notificationContent
-
-            if content.isActivityNotification ||
-               content.isEngagementNotification(.stayHydrated) ||
-               content.isEngagementNotification(.stepGoalEncouragement) ||
-               content.isEngagementNotification(.setUpActivity)
-            {
-                tabs.selectedTabBarItem = .activity
-            }
-            else if content.isEngagementNotification(.startedBreather) ||
-                    content.isEngagementNotification(.startedMeditation)
-            {
-                tabs.selectedTabBarItem = .activity
-                goToMindfulnessLanding()
-
-            }
-            else if content.isMindfulNotification(.sunday) || content.isMindfulNotification(.monday) ||
-                    content.isMindfulNotification(.tuesday) || content.isMindfulNotification(.wednesday) ||
-                    content.isMindfulNotification(.thursday) || content.isMindfulNotification(.friday) ||
-                    content.isMindfulNotification(.saturday)
-            {
-                tabs.selectedTabBarItem = .activity
-                goToMindfulnessLanding()
-                services?.analytics.track(AnalyticsEvent.mindfulReminderAlertOpened)
-            }
-            else if content.isForNewApplications ||
-                    content.isEngagementNotification(.addRemoveApplications) ||
-                    content.isEngagementNotification(.editApplicationBehavior)
-            {
-                tabs.selectedTabBarItem = .notifications
-            }
-        }
-    }
-}
-
 extension AppDelegate
 {
     // MARK: - URL Parser Results
@@ -552,36 +369,11 @@ extension AppDelegate
         case .multi(let results):
             results.forEach(applyURLAction)
 
-        case .resetPassword(let tokenString):
-            if let authentication = (container.childViewController.value as? AuthenticationViewController)
-            {
-                authentication.presentPasswordResetWithTokenString(tokenString)
-            }
-            else if viewController.presentedViewController == nil
-            {
-                let passwordReset = PasswordResetViewController(services: services)
-                passwordReset.tokenString.value = tokenString
-
-                let navigation = AuthenticationNavigationController()
-                navigation.navigation.pushViewController(passwordReset, animated: false)
-                viewController.present(navigation, animated: true, completion: nil)
-
-                navigation.poppedRoot = { controller in
-                    controller.dismiss(animated: true, completion: nil)
-                }
-
-                passwordReset.completed = { _ in
-                    navigation.dismiss(animated: true, completion: nil)
-                }
-            }
-
         case .collectDiagnosticData(let queryItems):
             viewController.collectDiagnosticData(from: services, queryItems: queryItems)
 
         case .developerMode(let enable):
-            #if DEBUG || FUTURE
             services.preferences.developerModeEnabled.value = enable
-            #endif
 
         case .review:
             services.preferences.reviewsState.value = .display(.prompt)
@@ -620,10 +412,6 @@ extension AppDelegate: ContainerViewControllerTransitioningDelegate
                let fromProviding = from as? ForegroundBackgroundContentViewProviding
             {
                 return ForegroundBackgroundTransitionController(operation: .push, from: fromProviding, to: toProviding)
-            }
-            else
-            {
-                return SlideTransitionController(operation: (to is AuthenticationViewController) ? .pop : .push)
             }
         }
         else
