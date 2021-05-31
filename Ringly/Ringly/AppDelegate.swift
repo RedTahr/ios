@@ -1,4 +1,3 @@
-import AirshipKit
 import MessageUI
 import Mixpanel
 import RinglyActivityTracking
@@ -6,39 +5,7 @@ import RinglyExtensions
 import ReactiveSwift
 import Result
 import RinglyAPI
-import RinglyDFU
 import UIKit
-import Fabric
-import Crashlytics
-
-#if FUTURE
-    import HockeySDK
-
-    #if EXPERIMENTAL
-        private let hockeyAppToken = "YOUR-TOKEN-HERE"
-        private let hockeyAppSecret = "YOUR-SECRET-HERE"
-    #else
-        #if NIGHTLY
-            private let hockeyAppToken = "YOUR-TOKEN-HERE"
-            private let hockeyAppSecret = "YOUR-SECRET-HERE"
-        #else
-            private let hockeyAppToken = "YOUR-TOKEN-HERE"
-            private let hockeyAppSecret = "YOUR-SECRET-HERE"
-        #endif
-    #endif
-#endif
-
-#if DEBUG || FUTURE || FUTURE_RELEASE
-    private let airshipConfigDevelopmentAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigDevelopmentAppSecret = "YOUR-SECRET-HERE"
-    private let airshipConfigProductionAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigProductionAppSecret = "YOUR-SECRET-HERE"
-#else
-    private let airshipConfigDevelopmentAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigDevelopmentAppSecret = "YOUR-SECRET-HERE"
-    private let airshipConfigProductionAppKey = "YOUR-KEY-HERE"
-    private let airshipConfigProductionAppSecret = "YOUR-SECRET-HERE"
-#endif
 
 final class AppDelegate: NSObject, UIApplicationDelegate
 {
@@ -56,9 +23,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
     /// The root view controllers for
     fileprivate let container = ContainerViewController()
 
-    /// The shared delegate for Urban Airship classes.
-    fileprivate let urbanAirshipDelegate = UrbanAirshipDelegate()
-
     // MARK: - Launch
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?)
         -> Bool
@@ -69,9 +33,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
         let mixpanel = Mixpanel.sharedInstance(withToken: kAnalyticsMixpanelToken, launchOptions: launchOptions)
         mixpanel.enableLogging = false // these logs are mostly useless and spam the console
         mixpanel.timeEvent(kAnalyticsApplicationLaunched)
-
-        // crashlytics setup
-        Fabric.with([Crashlytics.self])
 
         // set up RLog
         RLogIgnoredTypes = .dfuNordic
@@ -95,10 +56,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
         let services = Services()
         self.services = services
 
-        // prime cache
-        services.cache.cacheGuidedAudioSessions(completion: nil)
-
-
         // log startup centrals
         if let centrals = launchOptions?[UIApplicationLaunchOptionsKey.bluetoothCentrals] as? [String]
         {
@@ -116,9 +73,9 @@ final class AppDelegate: NSObject, UIApplicationDelegate
         }
 
         // in debug mode, automatically enable developer features
-        #if DEBUG
+       // #if DEBUG
             services.preferences.developerModeEnabled.value = true
-        #endif
+       // #endif
 
         // create a window for the application
         #if DEBUG || FUTURE
@@ -201,42 +158,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate
                 }
             })
             .map({ _, current in current })
-
-        // configure HockeyApp
-        #if FUTURE
-            let manager = BITHockeyManager.shared()
-            manager.configure(withIdentifier: hockeyAppToken)
-            manager.authenticator.authenticationSecret = hockeyAppSecret
-            manager.authenticator.identificationType = .hockeyAppEmail
-            manager.crashManager.crashManagerStatus = .autoSend
-            manager.start()
-            manager.authenticator.authenticateInstallation()
-        #endif
-
-        // configure urban airship
-        let airshipConfig = UAConfig()
-        airshipConfig.detectProvisioningMode = true
-        airshipConfig.developmentAppKey = airshipConfigDevelopmentAppKey
-        airshipConfig.developmentAppSecret = airshipConfigDevelopmentAppSecret
-        airshipConfig.productionAppKey = airshipConfigProductionAppKey
-        airshipConfig.productionAppSecret = airshipConfigProductionAppSecret
-
-        SLogGeneric("Airship config key is \(airshipConfig.appKey ?? "none")")
-
-        UAirship.takeOff(airshipConfig)
-        urbanAirshipDelegate.delegate = self
-        UAirship.push().pushNotificationDelegate = urbanAirshipDelegate
-        UAirship.push().registrationDelegate = urbanAirshipDelegate
-
-        services.api.authentication.producer.map({ $0.user?.identifier }).startWithValues({ identifier in
-            UAirship.namedUser().identifier = identifier
-        })
-
-        // backport local notification users to Urban Airship
-        if application.currentUserNotificationSettings.map({ !$0.types.isEmpty }) ?? false
-        {
-            UAirship.push().userPushNotificationsEnabled = true
-        }
 
         // protected data logging
         if application.isProtectedDataAvailable

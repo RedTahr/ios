@@ -20,9 +20,6 @@ public extension Reactive where Base: RLYCentral
 
             configuration(observer, sink.send)
 
-            disposable += AnyDisposable {
-                self.base.remove(observer: observer)
-            }
         }
     }
 

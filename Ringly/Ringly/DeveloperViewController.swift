@@ -415,27 +415,6 @@ extension DeveloperViewController
         present(alert, animated: true, completion: nil)
     }
 
-    @objc fileprivate func DFUAction()
-    {
-        selectPeripheral { peripheral in
-            let builder = DFUPackageBuilderViewController(services: self.services)
-            builder.peripheral.value = peripheral
-
-            let navigation = UINavigationController(rootViewController: builder)
-
-            builder.completed = { [weak self, weak navigation] _, result in
-                navigation?.dismiss(animated: true, completion: nil)
-                self?.presentDFU(peripheral: peripheral, firmwareResult: result)
-            }
-
-            builder.cancelled = { [weak navigation] _ in
-                navigation?.dismiss(animated: true, completion: nil)
-            }
-
-            self.present(navigation, animated: true, completion: nil)
-        }
-    }
-
     @objc fileprivate func peripheralNameAction()
     {
         selectPeripheral { peripheral in

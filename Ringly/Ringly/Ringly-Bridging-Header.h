@@ -14,16 +14,7 @@
 #import "UIView+Ringly.h"
 #import "Functions.h"
 #import "DeveloperWriteViewController.h"
-#import "AnalyticsService.h"
-#import "DFUOpenSettingsSubview.h"
 #import "LegalViewController.h"
 #import "FakeTouchView.h"
 
 #import "NSString+Ringly.h"
-
-// DFU child view controllers
-//#import "DFUFakePhoneView.h"
-//#import "DFULightningView.h"
-//#import "DFUProgressView.h"
-//#import "DFUToggleBluetoothFakePhoneView.h"
-//#import <PINRemoteImage/PINRemoteImage.h>

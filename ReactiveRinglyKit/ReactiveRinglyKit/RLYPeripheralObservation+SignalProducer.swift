@@ -22,9 +22,6 @@ public extension Reactive where Base: RLYPeripheralObservation
             
             self.base.add(observer: observer)
             
-            disposable += AnyDisposable {
-                self.base.remove(observer: observer)
-            }
         }
     }
     

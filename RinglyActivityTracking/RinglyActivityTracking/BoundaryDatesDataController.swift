@@ -63,7 +63,7 @@ public final class BoundaryDatesDataController
         )
 
         // enable the queue draining when requested by clients
-        queriesEnabled.producer.and(cacheCompleted.producer).startWithValues({ [weak queue] in queue?.draining = $0 })
+     //   queriesEnabled.producer.and(cacheCompleted.producer).startWithValues({ [weak queue] in queue?.draining = $0 })
     }
 
     // MARK: - Cleanup
