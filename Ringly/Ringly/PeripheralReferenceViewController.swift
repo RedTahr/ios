@@ -146,17 +146,6 @@ final class PeripheralReferenceViewController: ServicesViewController
         referenceView.peripheralTapped.startWithValues({ [weak self] in
             self?.sendBuzz($0)
         })
-
-        // enable DFU when updates button is tapped
-        referenceView.updateTapped.startWithValues({ [weak self] in self?.launchDFU() })
-
-        // track DFU banner shown events
-        referenceView.model.producer.map({ $0?.content.updateAvailable ?? false })
-            .skipRepeats()
-            .ignore(false)
-            .startWithValues({ [weak self] _ in
-                self?.services.analytics.track(AnalyticsDFUEvent.bannerShown)
-            })
     }
 
     // MARK: - Actions

@@ -64,22 +64,6 @@ extension UIViewController
             })
         }
     }
-    
-    // MARK: - Presenting DFU Error Alerts
-    
-    /**
-     Creates a producer to present an error alert above the view controller, completing after the alert is dismissed.
-     
-     - parameter error:             The error to present.
-     */
-    func presentDFUErrorProducer(_ error: NSError)
-        -> SignalProducer<(), NoError>
-    {
-        return SignalProducer { observer, disposable in
-            // TODO: disposable, configure alert to error type?
-            DFUAlertViewController(alertType: .didNotUpdate, closeAction: observer.sendInterrupted).present(above: self)
-        }
-    }
 
     /**
      Presents an error above the view controller.

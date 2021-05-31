@@ -64,24 +64,6 @@ final class ActivityEmptyViewController: ServicesViewController
 
     /// Multicasts the current activity tracking connectivity.
     fileprivate let connectivity = MutableProperty(ActivityTrackingConnectivity?.none)
-
-    /// Presents the DFU controller when the update button is tapped.
-    fileprivate func presentDFU()
-    {
-        guard let connectivity = self.connectivity.value else { return }
-
-        switch connectivity
-        {
-        case let .updateRequired(.some(identifier), _):
-            if let peripheral = services.peripherals.activatedPeripheral.value,
-               let firmwareResult = services.updates.firmwareResults.value[identifier]?.value.flatten()
-            {
-                presentDFU(peripheral: peripheral, firmwareResult: firmwareResult)
-            }
-        default:
-            break
-        }
-    }
 }
 
 // MARK: - Content View

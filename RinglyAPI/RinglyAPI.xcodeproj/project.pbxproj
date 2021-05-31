@@ -7,17 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4300689B1DA305310065E2D7 /* RESTRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300689A1DA305310065E2D7 /* RESTRequestTests.swift */; };
 		4339E1B81DE6004C00D57249 /* NSData+Godzippa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4339E1B51DE6004C00D57249 /* NSData+Godzippa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4339E1B91DE6004C00D57249 /* NSData+Godzippa.m in Sources */ = {isa = PBXBuildFile; fileRef = 4339E1B61DE6004C00D57249 /* NSData+Godzippa.m */; };
 		4339E1BB1DE6006C00D57249 /* GodzippaDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4339E1BA1DE6006C00D57249 /* GodzippaDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		433E42BA1DFF408700985486 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E42B91DFF408700985486 /* AuthenticationTests.swift */; };
-		433E42BC1DFF421A00985486 /* APIServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E42BB1DFF421A00985486 /* APIServerTests.swift */; };
 		433F619C1DFF249700DD480F /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433F619B1DFF249700DD480F /* Coding.swift */; };
-		4354AC801E42CD31009B05C7 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4354AC7F1E42CD31009B05C7 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		435A15751DE49CD00021A959 /* ReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A15741DE49CD00021A959 /* ReviewRequest.swift */; };
-		435A15771DE4A2C00021A959 /* StringTruncationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A15761DE4A2C00021A959 /* StringTruncationTests.swift */; };
-		435A15791DE4A6030021A959 /* ReviewRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A15781DE4A6030021A959 /* ReviewRequestTests.swift */; };
 		435E3CCB1CB54AE10046F3D7 /* RinglyAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 435E3CCA1CB54AE10046F3D7 /* RinglyAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435E3CD91CB54CA70046F3D7 /* RESTRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CD81CB54CA70046F3D7 /* RESTRequests.swift */; };
 		435E3CDB1CB54CF00046F3D7 /* Dictionary+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CDA1CB54CF00046F3D7 /* Dictionary+Decoding.swift */; };
@@ -26,7 +20,6 @@
 		435E3CE51CB54E130046F3D7 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CE41CB54E130046F3D7 /* APIServer.swift */; };
 		435E3CE91CB54EE20046F3D7 /* LogFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CE81CB54EE20046F3D7 /* LogFunction.swift */; };
 		435E3CEF1CB54F9D0046F3D7 /* ResetToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CEE1CB54F9D0046F3D7 /* ResetToken.swift */; };
-		435E3CF11CB551510046F3D7 /* FirmwareResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CF01CB551510046F3D7 /* FirmwareResult.swift */; };
 		435E3CF51CB553C70046F3D7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CF41CB553C70046F3D7 /* APIService.swift */; };
 		435E3CF71CB553EF0046F3D7 /* NSError+HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CF61CB553EF0046F3D7 /* NSError+HTTPResponse.swift */; };
 		435E3CFB1CB555860046F3D7 /* AppEventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3CFA1CB555860046F3D7 /* AppEventsRequest.swift */; };
@@ -37,59 +30,22 @@
 		435E3D091CB566390046F3D7 /* AddedHTTPHeadersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E3D081CB566390046F3D7 /* AddedHTTPHeadersRequest.swift */; };
 		435E7EAC1E3FD7F900856D4E /* DiagnosticDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E7EAB1E3FD7F900856D4E /* DiagnosticDataRequest.swift */; };
 		435E7EAE1E3FF04000856D4E /* Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E7EAD1E3FF04000856D4E /* Multipart.swift */; };
-		436E28131CB84D8C00D4663C /* NSErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E28121CB84D8C00D4663C /* NSErrorTests.swift */; };
-		436E282E1CB84EB700D4663C /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 436E281B1CB84E9400D4663C /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		439020391E42E10100C01282 /* ResponseProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439020381E42E10100C01282 /* ResponseProcessing.swift */; };
-		439020401E42E6DA00C01282 /* DFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4390203E1E42E6DA00C01282 /* DFULibrary.framework */; };
 		439020411E42E6DA00C01282 /* RinglyExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4390203F1E42E6DA00C01282 /* RinglyExtensions.framework */; };
 		439C09391E42C200005C8D43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439C09381E42C200005C8D43 /* Request.swift */; };
-		43AC36961E0AE32C00AB0049 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43AC36941E0AE31000AB0049 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43AC36971E0AE38300AB0049 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4339E1BC1DE62FB100D57249 /* libz.tbd */; };
-		43AC369A1E0AE3A600AB0049 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43AC36981E0AE39B00AB0049 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		43C649071DBFDA1A001D369D /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C649061DBFDA1A001D369D /* UserTests.swift */; };
 		D76201D61EC4DE4600522347 /* GuidedMeditationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76201D51EC4DE4600522347 /* GuidedMeditationsRequest.swift */; };
 		D76201D81EC4DF3C00522347 /* GuidedMeditationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76201D71EC4DF3C00522347 /* GuidedMeditationResult.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		436E280D1CB84D7700D4663C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 435E3CBE1CB54AE10046F3D7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 435E3CC61CB54AE10046F3D7;
-			remoteInfo = RinglyAPI;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		436E28291CB84EB100D4663C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4354AC801E42CD31009B05C7 /* Nimble.framework in CopyFiles */,
-				436E282E1CB84EB700D4663C /* Result.framework in CopyFiles */,
-				43AC369A1E0AE3A600AB0049 /* ReactiveCocoa.framework in CopyFiles */,
-				43AC36961E0AE32C00AB0049 /* ReactiveSwift.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		4300689A1DA305310065E2D7 /* RESTRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTRequestTests.swift; sourceTree = "<group>"; };
 		4339E1B51DE6004C00D57249 /* NSData+Godzippa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Godzippa.h"; path = "Godzippa/Godzippa/NSData+Godzippa.h"; sourceTree = "<group>"; };
 		4339E1B61DE6004C00D57249 /* NSData+Godzippa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Godzippa.m"; path = "Godzippa/Godzippa/NSData+Godzippa.m"; sourceTree = "<group>"; };
 		4339E1BA1DE6006C00D57249 /* GodzippaDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GodzippaDefines.h; path = Godzippa/Godzippa/GodzippaDefines.h; sourceTree = "<group>"; };
 		4339E1BC1DE62FB100D57249 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		433E42B91DFF408700985486 /* AuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
-		433E42BB1DFF421A00985486 /* APIServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServerTests.swift; sourceTree = "<group>"; };
 		433F619B1DFF249700DD480F /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
 		4354AC7F1E42CD31009B05C7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		435A15741DE49CD00021A959 /* ReviewRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewRequest.swift; sourceTree = "<group>"; };
-		435A15761DE4A2C00021A959 /* StringTruncationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTruncationTests.swift; sourceTree = "<group>"; };
-		435A15781DE4A6030021A959 /* ReviewRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewRequestTests.swift; sourceTree = "<group>"; };
 		435E3CC71CB54AE10046F3D7 /* RinglyAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RinglyAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435E3CCA1CB54AE10046F3D7 /* RinglyAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RinglyAPI.h; sourceTree = "<group>"; };
 		435E3CCC1CB54AE10046F3D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +56,6 @@
 		435E3CE41CB54E130046F3D7 /* APIServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
 		435E3CE81CB54EE20046F3D7 /* LogFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFunction.swift; sourceTree = "<group>"; };
 		435E3CEE1CB54F9D0046F3D7 /* ResetToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetToken.swift; sourceTree = "<group>"; };
-		435E3CF01CB551510046F3D7 /* FirmwareResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirmwareResult.swift; sourceTree = "<group>"; };
 		435E3CF41CB553C70046F3D7 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		435E3CF61CB553EF0046F3D7 /* NSError+HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+HTTPResponse.swift"; sourceTree = "<group>"; };
 		435E3CFA1CB555860046F3D7 /* AppEventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEventsRequest.swift; sourceTree = "<group>"; };
@@ -111,17 +66,12 @@
 		435E3D081CB566390046F3D7 /* AddedHTTPHeadersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedHTTPHeadersRequest.swift; sourceTree = "<group>"; };
 		435E7EAB1E3FD7F900856D4E /* DiagnosticDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticDataRequest.swift; sourceTree = "<group>"; };
 		435E7EAD1E3FF04000856D4E /* Multipart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multipart.swift; sourceTree = "<group>"; };
-		436E28071CB84D7700D4663C /* RinglyAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RinglyAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		436E280B1CB84D7700D4663C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		436E28121CB84D8C00D4663C /* NSErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSErrorTests.swift; sourceTree = "<group>"; };
 		436E281B1CB84E9400D4663C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		439020381E42E10100C01282 /* ResponseProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseProcessing.swift; sourceTree = "<group>"; };
-		4390203E1E42E6DA00C01282 /* DFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DFULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4390203F1E42E6DA00C01282 /* RinglyExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RinglyExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439C09381E42C200005C8D43 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		43AC36941E0AE31000AB0049 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = ../Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		43AC36981E0AE39B00AB0049 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		43C649061DBFDA1A001D369D /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		D76201D51EC4DE4600522347 /* GuidedMeditationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidedMeditationsRequest.swift; sourceTree = "<group>"; };
 		D76201D71EC4DF3C00522347 /* GuidedMeditationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidedMeditationResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,16 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439020401E42E6DA00C01282 /* DFULibrary.framework in Frameworks */,
 				439020411E42E6DA00C01282 /* RinglyExtensions.framework in Frameworks */,
 				43AC36971E0AE38300AB0049 /* libz.tbd in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		436E28041CB84D7700D4663C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				435E3CC91CB54AE10046F3D7 /* RinglyAPI */,
-				436E28081CB84D7700D4663C /* RinglyAPITests */,
 				435E3CC81CB54AE10046F3D7 /* Products */,
 				435E3D0E1CB5738A0046F3D7 /* Frameworks */,
 			);
@@ -181,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				435E3CC71CB54AE10046F3D7 /* RinglyAPI.framework */,
-				436E28071CB84D7700D4663C /* RinglyAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				435E3CE01CB54DF60046F3D7 /* Authentication.swift */,
-				435E3CF01CB551510046F3D7 /* FirmwareResult.swift */,
 				435E3CEE1CB54F9D0046F3D7 /* ResetToken.swift */,
 				435E3CE11CB54DF60046F3D7 /* User.swift */,
 				D76201D71EC4DF3C00522347 /* GuidedMeditationResult.swift */,
@@ -262,7 +201,6 @@
 		435E3D0E1CB5738A0046F3D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4390203E1E42E6DA00C01282 /* DFULibrary.framework */,
 				4339E1BC1DE62FB100D57249 /* libz.tbd */,
 				4354AC7F1E42CD31009B05C7 /* Nimble.framework */,
 				43AC36981E0AE39B00AB0049 /* ReactiveCocoa.framework */,
@@ -271,21 +209,6 @@
 				4390203F1E42E6DA00C01282 /* RinglyExtensions.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		436E28081CB84D7700D4663C /* RinglyAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				433E42BB1DFF421A00985486 /* APIServerTests.swift */,
-				433E42B91DFF408700985486 /* AuthenticationTests.swift */,
-				436E28121CB84D8C00D4663C /* NSErrorTests.swift */,
-				4300689A1DA305310065E2D7 /* RESTRequestTests.swift */,
-				435A15781DE4A6030021A959 /* ReviewRequestTests.swift */,
-				435A15761DE4A2C00021A959 /* StringTruncationTests.swift */,
-				43C649061DBFDA1A001D369D /* UserTests.swift */,
-				436E280B1CB84D7700D4663C /* Info.plist */,
-			);
-			path = RinglyAPITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,25 +245,6 @@
 			productReference = 435E3CC71CB54AE10046F3D7 /* RinglyAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		436E28061CB84D7700D4663C /* RinglyAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 436E280F1CB84D7700D4663C /* Build configuration list for PBXNativeTarget "RinglyAPITests" */;
-			buildPhases = (
-				436E28031CB84D7700D4663C /* Sources */,
-				436E28041CB84D7700D4663C /* Frameworks */,
-				436E28051CB84D7700D4663C /* Resources */,
-				436E28291CB84EB100D4663C /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				436E280E1CB84D7700D4663C /* PBXTargetDependency */,
-			);
-			name = RinglyAPITests;
-			productName = RinglyAPITests;
-			productReference = 436E28071CB84D7700D4663C /* RinglyAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -352,10 +256,6 @@
 				ORGANIZATIONNAME = Ringly;
 				TargetAttributes = {
 					435E3CC61CB54AE10046F3D7 = {
-						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0820;
-					};
-					436E28061CB84D7700D4663C = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0820;
 					};
@@ -374,20 +274,12 @@
 			projectRoot = "";
 			targets = (
 				435E3CC61CB54AE10046F3D7 /* RinglyAPI */,
-				436E28061CB84D7700D4663C /* RinglyAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		435E3CC51CB54AE10046F3D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		436E28051CB84D7700D4663C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -417,7 +309,6 @@
 				435E3D071CB565F60046F3D7 /* FirmwareRequest.swift in Sources */,
 				D76201D61EC4DE4600522347 /* GuidedMeditationsRequest.swift in Sources */,
 				435E3CF71CB553EF0046F3D7 /* NSError+HTTPResponse.swift in Sources */,
-				435E3CF11CB551510046F3D7 /* FirmwareResult.swift in Sources */,
 				435E3CE91CB54EE20046F3D7 /* LogFunction.swift in Sources */,
 				439C09391E42C200005C8D43 /* Request.swift in Sources */,
 				435E3D011CB564FD0046F3D7 /* AuthenticationRequests.swift in Sources */,
@@ -429,29 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		436E28031CB84D7700D4663C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				433E42BC1DFF421A00985486 /* APIServerTests.swift in Sources */,
-				43C649071DBFDA1A001D369D /* UserTests.swift in Sources */,
-				433E42BA1DFF408700985486 /* AuthenticationTests.swift in Sources */,
-				4300689B1DA305310065E2D7 /* RESTRequestTests.swift in Sources */,
-				436E28131CB84D8C00D4663C /* NSErrorTests.swift in Sources */,
-				435A15791DE4A6030021A959 /* ReviewRequestTests.swift in Sources */,
-				435A15771DE4A2C00021A959 /* StringTruncationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		436E280E1CB84D7700D4663C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 435E3CC61CB54AE10046F3D7 /* RinglyAPI */;
-			targetProxy = 436E280D1CB84D7700D4663C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		435E3CCD1CB54AE10046F3D7 /* Debug */ = {
@@ -592,26 +461,6 @@
 			};
 			name = Release;
 		};
-		436E28101CB84D7700D4663C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = RinglyAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ringly.RinglyAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		436E28111CB84D7700D4663C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = RinglyAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ringly.RinglyAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -629,15 +478,6 @@
 			buildConfigurations = (
 				435E3CD01CB54AE10046F3D7 /* Debug */,
 				435E3CD11CB54AE10046F3D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		436E280F1CB84D7700D4663C /* Build configuration list for PBXNativeTarget "RinglyAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				436E28101CB84D7700D4663C /* Debug */,
-				436E28111CB84D7700D4663C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

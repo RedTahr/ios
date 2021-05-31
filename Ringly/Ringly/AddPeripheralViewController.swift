@@ -245,44 +245,6 @@ extension AddPeripheralViewController
         services.peripherals.central.stopDiscoveringPeripherals()
     }
 
-    fileprivate func presentRecoveryWithPeripheral(_ peripheral: RLYRecoveryPeripheral)
-    {
-        // ensure alert only happens once
-        self.services.preferences.deviceInRecovery.value = false
-        
-        if let hardware = peripheral.hardwareVersion?.value
-        {
-            pairingWithPeripheral.value = true
-            
-            let DFU = DFUViewController(services: services)
-
-            DFU.configure(
-                mode: .recovery(peripheralIdentifier: peripheral.peripheral.identifier, hardwareVersion: hardware),
-                packageSource: .latestForHardware(version: hardware, APIService: services.api)
-            )
-
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
-                self.view.window?.rootViewController?.present(DFU, animated: true, completion: nil)
-            })
-            
-            DFU.completion = { [weak self] controller in
-                controller.dismiss(animated: true, completion: nil)
-                self?.pairingWithPeripheral.value = false
-                if let parent = self?.parent as? UINavigationController {
-                    parent.popViewController(animated: true)
-                }
-            }
-            
-            DFU.failed = { [weak self] controller in
-                controller.dismiss(animated: true, completion: nil)
-                self?.pairingWithPeripheral.value = false
-            }
-        }
-        else
-        {
-            presentAlert(title: "Error", message: "Unsupported hardware version")
-        }
-    }
 }
 
 extension AddPeripheralViewController: UITableViewDataSource
